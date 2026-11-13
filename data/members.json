@@ -1,0 +1,2144 @@
+{
+ "members": [
+  {
+   "pid": 204,
+   "name": "Zulfat Suara",
+   "district": null,
+   "seatNo": 1,
+   "area": "Countywide",
+   "email": "Zulfat.Suara@nashville.gov",
+   "phone": "615-432-1341",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/at-large-1",
+   "photo": "photos/zulfat-suara.jpg",
+   "bio": "Certified public accountant, director of finance for grant accounting, and president of Advance Business Consultants. Past board chair of the American Muslim Advisory Council and an inductee of the Tennessee Women Hall of Fame.",
+   "committees": [
+    "Budget and Finance, Member",
+    "Public Health and Safety, Member",
+    "Charter Revision, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/zulfat-suara"
+   },
+   "attendance": {
+    "attended": 65,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-09-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1839&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-11-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1975&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-12-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1845&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-02-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1994&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-03-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1996&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-10",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2002&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-09-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2009&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-11-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2112&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-03-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2187&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2193&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 233,
+   "name": "Delishia Porterfield",
+   "district": null,
+   "seatNo": 2,
+   "area": "Countywide",
+   "email": "Delishia.Porterfield@nashville.gov",
+   "phone": "615-432-1342",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/at-large-2",
+   "photo": "photos/delishia-porterfield.jpg",
+   "bio": "Former special education teacher and coach with two degrees from Tennessee State University. Trainer with the Progressive Governance Academy and a community organizer.",
+   "committees": [
+    "Budget and Finance, Chair",
+    "Public Health and Safety, Member"
+   ],
+   "newsletter": null,
+   "attendance": {
+    "attended": 67,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-04-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1802&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-11-19",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1843&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-03-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1995&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-11-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2112&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-03-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2187&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-04-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2189&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-08-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2197&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-09-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2200&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 290,
+   "name": "Quin Evans-Segall",
+   "district": null,
+   "seatNo": 3,
+   "area": "Countywide",
+   "email": "Quin.EvansSegall@nashville.gov",
+   "phone": "615-432-1343",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/at-large-3",
+   "photo": "photos/quin-evans-segall.jpg",
+   "bio": "Attorney with undergraduate and law degrees from the University of Alabama. Cofounder of Voices for a Safer Tennessee and a TPAC Foundation board member.",
+   "committees": [
+    "Budget and Finance, Member",
+    "Transportation and Infrastructure, Member",
+    "Ad Hoc East Bank, Chair",
+    "Traffic and Parking Commission, Member"
+   ],
+   "newsletter": {
+    "label": "The Quintessentials",
+    "url": "https://quinevanssegall.beehiiv.com/subscribe"
+   },
+   "attendance": {
+    "attended": 70,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-10-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1841&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-05-06",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1999&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-05-19",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2305&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-07-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2195&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-10-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2202&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 202,
+   "name": "Burkley Allen",
+   "district": null,
+   "seatNo": 4,
+   "area": "Countywide",
+   "email": "Burkley.Allen@nashville.gov",
+   "phone": "615-432-1344",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/at-large-4",
+   "photo": "photos/burkley-allen.jpg",
+   "bio": "Mechanical engineer with an MS from the University of Virginia and a physics degree from Davidson College. Co-chair of the Urban Land Institute Housing Action Council.",
+   "committees": [
+    "Budget and Finance, Member",
+    "Transportation and Infrastructure, Member",
+    "Planning and Zoning, Member",
+    "Audit Committee, Member"
+   ],
+   "newsletter": {
+    "label": "Monthly updates",
+    "url": "https://www.burkley.org/news/"
+   },
+   "attendance": {
+    "attended": 75,
+    "total": 75,
+    "missed": [],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 291,
+   "name": "Olivia Hill",
+   "district": null,
+   "seatNo": 5,
+   "area": "Countywide",
+   "email": "Olivia.Hill@nashville.gov",
+   "phone": "615-432-1345",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/at-large-5",
+   "photo": "photos/olivia-hill.jpg",
+   "bio": "Navy veteran of 10 years who served in Desert Storm, with 40 years in utilities, engineering and infrastructure. Secretary of the council's LGBT Caucus.",
+   "committees": [
+    "Government Operations and Regulations, Chair",
+    "Transportation and Infrastructure, Member",
+    "District Energy System Advisory Board, Chair"
+   ],
+   "newsletter": {
+    "label": "Sign up on her site",
+    "url": "https://voteoliviahill.com/"
+   },
+   "attendance": {
+    "attended": 73,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-07-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1835&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2193&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 275,
+   "name": "Joy Kimbrough",
+   "district": 1,
+   "seatNo": null,
+   "area": "Bordeaux, Joelton, Whites Creek",
+   "email": "Joy.Kimbrough@nashville.gov",
+   "phone": "615-432-1301",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-1",
+   "photo": "photos/joy-kimbrough.jpg",
+   "bio": "Attorney who runs the Law Office of Joy Kimbrough and holds a law doctorate.",
+   "committees": [
+    "Government Operations and Regulations, Member",
+    "Public Health and Safety, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/joy-kimbrough"
+   },
+   "attendance": {
+    "attended": 68,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-04-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1802&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-08-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1837&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-11-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2112&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-03-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2187&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2192&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2193&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-11-05",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2203&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 206,
+   "name": "Kyonzté Toombs",
+   "district": 2,
+   "seatNo": null,
+   "area": "North Nashville",
+   "email": "Kyonzte.Toombs@nashville.gov",
+   "phone": "615-432-1302",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-2",
+   "photo": "photos/kyonzte-toombs.jpg",
+   "bio": "Attorney with degrees from Vanderbilt (BA, law), Emory (MBA) and Alabama (tax LLM). Chairs the council's Minority Caucus.",
+   "committees": [
+    "Budget and Finance, Vice Chair",
+    "Rules, Confirmations, and Public Elections, Member",
+    "Charter Revision, Member",
+    "Ad Hoc East Bank, Member",
+    "Tax Incentive and Abatement Study and Formulating Committee, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/kyonzte-toombs"
+   },
+   "attendance": {
+    "attended": 73,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2025-11-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2112&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-09-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2200&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 207,
+   "name": "Jennifer Gamble",
+   "district": 3,
+   "seatNo": null,
+   "area": "Parkwood, Bellshire",
+   "email": "Jennifer.Gamble@nashville.gov",
+   "phone": "615-432-1303",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-3",
+   "photo": "photos/jennifer-gamble.jpg",
+   "bio": "Founder and CEO of Nelson PR & Communications since 2012 and former president and CEO of Prevent Blindness Tennessee. Fisk University alumna with a master's in mass communication.",
+   "committees": [
+    "Planning and Zoning, Chair",
+    "Budget and Finance, Member",
+    "Planning Commission, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/jennifer-gamble"
+   },
+   "attendance": {
+    "attended": 68,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-03-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1799&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-12-03",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1844&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-07-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2004&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-11-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2112&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-04-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2188&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-05-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2190&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-11-05",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2203&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 292,
+   "name": "Mike Cortese",
+   "district": 4,
+   "seatNo": null,
+   "area": "Southern Davidson",
+   "email": "Mike.Cortese@nashville.gov",
+   "phone": "615-432-1304",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-4",
+   "photo": "photos/mike-cortese.jpg",
+   "bio": "Belmont University graduate (BBA, MEd) and former Belmont adjunct professor. Previously worked in business development at Dell Technologies and client services at Sepetys Entertainment Group.",
+   "committees": [
+    "Budget and Finance, Member",
+    "Planning and Zoning, Member"
+   ],
+   "newsletter": null,
+   "attendance": {
+    "attended": 69,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-02-06",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1775&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-08-06",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1836&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-11-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1975&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-05-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2095&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-09-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2008&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2192&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 209,
+   "name": "Sean Parker",
+   "district": 5,
+   "seatNo": null,
+   "area": "East Nashville",
+   "email": "Sean.Parker@nashville.gov",
+   "phone": "615-432-1305",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-5",
+   "photo": "photos/sean-parker.jpg",
+   "bio": "Represents East Nashville. His official page lists committee work on transportation, planning and the East Bank.",
+   "committees": [
+    "Transportation and Infrastructure, Chair",
+    "Planning and Zoning, Member",
+    "Ad Hoc East Bank, Member",
+    "Short Term Rental Appeals Board, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/sean-parker"
+   },
+   "attendance": {
+    "attended": 72,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-04-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1802&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-10",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2002&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-10-06",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2201&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 276,
+   "name": "Clay Capp",
+   "district": 6,
+   "seatNo": null,
+   "area": "Lockeland Springs, Edgefield",
+   "email": "Clay.Capp@nashville.gov",
+   "phone": "615-432-1306",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-6",
+   "photo": "photos/clay-capp.jpg",
+   "bio": "Represents Lockeland Springs and Edgefield and chairs the Charter Revision Committee.",
+   "committees": [
+    "Arts, Parks, Libraries, and Entertainment, Member",
+    "Planning and Zoning, Member",
+    "Charter Revision, Chair",
+    "Ad Hoc East Bank, Member",
+    "Greenway and Open Space Commission, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter",
+    "url": "https://clay-capp.beehiiv.com/"
+   },
+   "attendance": {
+    "attended": 75,
+    "total": 75,
+    "missed": [],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 211,
+   "name": "Emily Benedict",
+   "district": 7,
+   "seatNo": null,
+   "area": "Inglewood",
+   "email": "Emily.Benedict@nashville.gov",
+   "phone": "615-432-1307",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-7",
+   "photo": "photos/emily-benedict.jpg",
+   "bio": "Realtor and business consultant with a BA from Western Michigan University.",
+   "committees": [
+    "Transportation and Infrastructure, Member",
+    "Planning and Zoning, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/emily-benedict"
+   },
+   "attendance": {
+    "attended": 70,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2025-02-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1993&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-10",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2002&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-02-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2185&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-03-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2187&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2192&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 277,
+   "name": "Deonté Harrell",
+   "district": 8,
+   "seatNo": null,
+   "area": "Maplewood, South Madison",
+   "email": "Deonte.Harrell@nashville.gov",
+   "phone": "615-432-1308",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-8",
+   "photo": "photos/deonte-harrell.jpg",
+   "bio": "Represents Maplewood and South Madison.",
+   "committees": [
+    "Planning and Zoning, Member",
+    "Public Health and Safety, Member"
+   ],
+   "newsletter": null,
+   "attendance": {
+    "attended": 73,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2025-07-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2005&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2193&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 213,
+   "name": "Tonya Hancock",
+   "district": 9,
+   "seatNo": null,
+   "area": "Madison",
+   "email": "Tonya.Hancock@nashville.gov",
+   "phone": "615-432-1309",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-9",
+   "photo": "photos/tonya-hancock.jpg",
+   "bio": "Former U.S. State Department and Amazon Business professional with a BA from the University of Tennessee and an MBA from Webster University. Founder and co-chair of the council's Veterans Caucus and council liaison to the MNPS Parent Advisory Council.",
+   "committees": [
+    "Arts, Parks, Libraries, and Entertainment, Member",
+    "Government Operations and Regulations, Member (former chair)"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/tonya-hancock"
+   },
+   "attendance": {
+    "attended": 61,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2023-11-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1749&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-01-23",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1759&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-05-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1830&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-07-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1835&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-10-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1841&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-03",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2001&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-07-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2004&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-11-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2112&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-12-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2113&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-02-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2185&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-03-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2187&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-07-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2195&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-09-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2200&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-10-06",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2201&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 278,
+   "name": "Jennifer Frensley Webb",
+   "district": 10,
+   "seatNo": null,
+   "area": "Goodlettsville area",
+   "email": "Jennifer.Webb@nashville.gov",
+   "phone": "615-432-1310",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-10",
+   "photo": "photos/jennifer-frensley-webb.jpg",
+   "bio": "Contractor with Bull Enterprises and an automotive dealer at Bob Frensley Chrysler Jeep Dodge Ram Fiat. Holds a marketing degree from Belmont.",
+   "committees": [
+    "Budget and Finance, Member",
+    "Government Operations and Regulations, Member"
+   ],
+   "newsletter": null,
+   "attendance": {
+    "attended": 67,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-03-19",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1800&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-05-06",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1999&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-10-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2010&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-03-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2187&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2192&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2193&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-07-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2196&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-11-05",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2203&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 293,
+   "name": "Jeff Eslick",
+   "district": 11,
+   "seatNo": null,
+   "area": "Old Hickory",
+   "email": "Jeff.Eslick@nashville.gov",
+   "phone": "615-432-1311",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-11",
+   "photo": "photos/jeff-eslick.jpg",
+   "bio": "Advertising consultant at Slick Media Productions with more than 20 years in advertising. Holds a mass communication degree from MTSU.",
+   "committees": [
+    "Arts, Parks, Libraries, and Entertainment, Member",
+    "Government Operations and Regulations, Vice Chair"
+   ],
+   "newsletter": null,
+   "attendance": {
+    "attended": 73,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-10-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1841&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-02-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2185&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 216,
+   "name": "Erin Evans",
+   "district": 12,
+   "seatNo": null,
+   "area": "Hermitage",
+   "email": "Erin.Evans@nashville.gov",
+   "phone": "615-432-1312",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-12",
+   "photo": "photos/erin-evans.jpg",
+   "bio": "Holds an MS in organizational communication from Murray State and a BA from the University of West Florida. Active in the Donelson Hermitage Neighborhood Alliance and Chamber of Commerce.",
+   "committees": [
+    "Rules, Confirmations and Public Elections, Member",
+    "Public Health and Safety, Chair"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/erin-evans"
+   },
+   "attendance": {
+    "attended": 72,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2025-01-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1985&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-10-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2011&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-10-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2202&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 217,
+   "name": "Russ Bradford",
+   "district": 13,
+   "seatNo": null,
+   "area": "Donelson",
+   "email": "Russ.Bradford@nashville.gov",
+   "phone": "615-432-1313",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-13",
+   "photo": "photos/russ-bradford.jpg",
+   "bio": "Quality assurance and quality control manager with a wildlife and fisheries science degree from Mississippi State. Vice chair of the council's LGBTQ Caucus.",
+   "committees": [
+    "Public Health and Safety, Member",
+    "Arts, Parks, Libraries, and Entertainment, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/russ-bradford"
+   },
+   "attendance": {
+    "attended": 70,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-10-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1840&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-02-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1994&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-03-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1996&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-10",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2002&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-10-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2202&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 279,
+   "name": "Jordan Huffman",
+   "district": 14,
+   "seatNo": null,
+   "area": "Donelson, Hermitage",
+   "email": "Jordan.Huffman@nashville.gov",
+   "phone": "615-432-1314",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-14",
+   "photo": "photos/jordan-huffman.jpg",
+   "bio": "Product lead for government solutions at MasterBorn and former president of the Donelson Hermitage Neighborhood Alliance. Holds a political science degree from East Tennessee State.",
+   "committees": [
+    "Budget and Finance, Member",
+    "Public Health and Safety, Vice Chair",
+    "Continuum of Care Homelessness Planning Council, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/jordan-huffman"
+   },
+   "attendance": {
+    "attended": 73,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-03-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1799&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-04-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2189&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 280,
+   "name": "Jeff Gregg",
+   "district": 15,
+   "seatNo": null,
+   "area": "Donelson, Pennington Bend",
+   "email": "Jeff.Gregg@nashville.gov",
+   "phone": "615-432-1315",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-15",
+   "photo": "photos/jeff-gregg.jpg",
+   "bio": "Represents Donelson and Pennington Bend. His official page lists budget, public safety and East Bank committee work.",
+   "committees": [
+    "Public Health and Safety, Member",
+    "Budget and Finance, Member",
+    "Ad Hoc East Bank, Member",
+    "Metro Action Commission, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/jeff-gregg"
+   },
+   "attendance": {
+    "attended": 64,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-04-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1802&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-07-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1834&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-09-03",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1838&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-11-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1975&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-05-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2095&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-07-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2004&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-11-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2111&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-02-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2185&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2194&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-07-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2196&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-09-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2200&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 220,
+   "name": "Ginny Welsch",
+   "district": 16,
+   "seatNo": null,
+   "area": "Glencliff",
+   "email": "Ginny.Welsch@nashville.gov",
+   "phone": "615-432-1316",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-16",
+   "photo": "photos/ginny-welsch.jpg",
+   "bio": "Co-founder and executive director of Radio Free Nashville with a communications degree from Tennessee State. Board chair of the Nashville Peace and Justice Center.",
+   "committees": [
+    "Arts, Parks, Libraries, and Entertainment, Member",
+    "Government Operations and Regulations, Member",
+    "Greenway and Open Space Commission, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/ginny-welsch"
+   },
+   "attendance": {
+    "attended": 64,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-05-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1830&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-06-11",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1832&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-08-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1837&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-03-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1996&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-07-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2004&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-02-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2185&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-04-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2189&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-05-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2190&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2192&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2193&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-09-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2199&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 281,
+   "name": "Terry Vo",
+   "district": 17,
+   "seatNo": null,
+   "area": "12 South (part), Woodycrest",
+   "email": "Terry.Vo@nashville.gov",
+   "phone": "615-432-1317",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-17",
+   "photo": "photos/terry-vo.jpg",
+   "bio": "External affairs manager at Comcast and former program manager at the Consulate-General of Japan in Nashville. Chairs the council's Immigrant Caucus and co-founded API Middle TN.",
+   "committees": [
+    "Arts, Parks, Libraries, and Entertainment, Vice Chair",
+    "Planning and Zoning, Member",
+    "Ad Hoc East Bank, Member",
+    "Metro Action Commission, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/terry-vo"
+   },
+   "attendance": {
+    "attended": 71,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2025-02-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1993&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-10-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2010&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-03-03",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2186&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2194&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 222,
+   "name": "Tom Cash",
+   "district": 18,
+   "seatNo": null,
+   "area": "Belmont-Hillsboro, Hillsboro-West End, 12 South",
+   "email": "Thomas.Cash@Nashville.gov",
+   "phone": "615-432-1318",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-18",
+   "photo": "photos/tom-cash.jpg",
+   "bio": "Longtime Metro Schools English and government teacher at Hillsboro and Hume-Fogg (1994 to 2019) and Hillsboro Teacher of the Year in 2001. Former chair of Hillsboro West End Neighbors. Holds a master's in education from MTSU.",
+   "committees": [
+    "Transportation and Infrastructure, Member",
+    "Charter Revision, Member",
+    "Rules, Confirmations, and Public Elections, Vice Chair"
+   ],
+   "newsletter": {
+    "label": "Newsletter",
+    "url": "https://www.votetomcash.com/newsletter-1"
+   },
+   "attendance": {
+    "attended": 75,
+    "total": 75,
+    "missed": [],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 282,
+   "name": "Jacob Kupin",
+   "district": 19,
+   "seatNo": null,
+   "area": "Downtown, Germantown",
+   "email": "Jacob.Kupin@nashville.gov",
+   "phone": "615-432-1319",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-19",
+   "photo": "photos/jacob-kupin.jpg",
+   "bio": "Realtor and broker who has founded several companies and worked as an artist manager and singer-songwriter. Belmont graduate and former president of the Historic Buena Vista neighborhood.",
+   "committees": [
+    "Ad Hoc East Bank, Vice Chair",
+    "Planning and Zoning, Member",
+    "Transportation and Infrastructure, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/jacob-kupin"
+   },
+   "attendance": {
+    "attended": 73,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-09-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1839&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-09-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2199&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 283,
+   "name": "Rollin Horton",
+   "district": 20,
+   "seatNo": null,
+   "area": "The Nations",
+   "email": "Rollin.Horton@nashville.gov",
+   "phone": "615-432-1320",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-20",
+   "photo": "photos/rollin-horton.jpg",
+   "bio": "Attorney with a law degree from the University of Connecticut and a BA in economics and political science from Illinois State. Elected in 2023.",
+   "committees": [
+    "Transportation and Infrastructure, Vice Chair",
+    "Planning and Zoning, Member"
+   ],
+   "newsletter": {
+    "label": "Westside Stories",
+    "url": "https://westsidestoriesrh.substack.com/"
+   },
+   "attendance": {
+    "attended": 71,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2025-09-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2009&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-05-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2190&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-09-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2199&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-11-05",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2203&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 225,
+   "name": "Brandon Taylor",
+   "district": 21,
+   "seatNo": null,
+   "area": "North Nashville",
+   "email": "Brandon.Taylor@nashville.gov",
+   "phone": "615-432-1321",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-21",
+   "photo": "photos/brandon-taylor.jpg",
+   "bio": "Certified fundraising executive who studied at the University of Memphis. Serves on the Housing Trust Fund Commission.",
+   "committees": [
+    "Arts, Parks, Libraries, and Entertainment, Member",
+    "Public Health and Safety, Member",
+    "Housing Trust Fund Commission, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/brandon-taylor"
+   },
+   "attendance": {
+    "attended": 61,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-01-23",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1759&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-04-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1802&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-09-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1839&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-11-19",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1843&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-12-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1845&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-05-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2095&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-10",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2002&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-08-05",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2006&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-08-19",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2007&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-10-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2010&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-02-03",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2184&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-05-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2190&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2193&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-09-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2199&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 284,
+   "name": "Sheri Weiner",
+   "district": 22,
+   "seatNo": null,
+   "area": "Bellevue",
+   "email": "Sheri.Weiner@nashville.gov",
+   "phone": "615-432-1322",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-22",
+   "photo": "photos/sheri-weiner.jpg",
+   "bio": "Audiologist and president of Hearing Services of TN, with degrees from Georgia, Tennessee and Florida. Board member of Arts Bellevue and the Bellevue Community Foundation.",
+   "committees": [
+    "Charter Revision, Vice Chair",
+    "Rules, Confirmations, and Public Elections, Member",
+    "Public Health and Safety, Member"
+   ],
+   "newsletter": {
+    "label": "Metro email signup",
+    "url": "https://public.govdelivery.com/accounts/TNNASH/subscriber/new"
+   },
+   "attendance": {
+    "attended": 60,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-03-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1799&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-06-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1831&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-07-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1835&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-09-03",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1838&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-04-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1997&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-05-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2095&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-07-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2004&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-08-19",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2007&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-11-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2111&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-04-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2188&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-05-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2190&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-05-19",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2305&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-07-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2196&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-09-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2199&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-10-06",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2201&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 227,
+   "name": "Thom Druffel",
+   "district": 23,
+   "seatNo": null,
+   "area": "West Meade",
+   "email": "Thom.Druffel@nashville.gov",
+   "phone": "615-432-1323",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-23",
+   "photo": "photos/thom-druffel.jpg",
+   "bio": "Hospitality executive who has led hotel operations for Marriott and IHG and directed hospitality at Nashville State Community College. Former chair of the MNPS Hospitality Academies.",
+   "committees": [
+    "Budget and Finance, Member",
+    "Rules, Confirmations, and Public Elections, Member"
+   ],
+   "newsletter": {
+    "label": "Back issues",
+    "url": "https://www.thomdruffel.com/back-issues"
+   },
+   "attendance": {
+    "attended": 66,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-05-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1829&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-07-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1834&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-09-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1839&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-03",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2001&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-09-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2009&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-01-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2176&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2192&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-07-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2195&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-10-06",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2201&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 285,
+   "name": "Brenda Gadd",
+   "district": 24,
+   "seatNo": null,
+   "area": "Sylvan Park",
+   "email": "Brenda.Gadd@nashville.gov",
+   "phone": "615-432-1324",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-24",
+   "photo": "photos/brenda-gadd.jpg",
+   "bio": "President of Rethink Public Strategies and former public policy director for the Tennessee Bar Association. Holds a law degree from the Nashville School of Law.",
+   "committees": [
+    "Arts, Parks, Libraries, and Entertainment, Chair",
+    "Planning and Zoning, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/brenda-gadd"
+   },
+   "attendance": {
+    "attended": 66,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2023-11-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1749&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-01-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1985&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-02-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1993&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-03",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2001&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-12-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2114&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-04-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2188&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2194&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-09-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2199&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-09-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2200&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 286,
+   "name": "Jeff Preptit",
+   "district": 25,
+   "seatNo": null,
+   "area": "Green Hills (part)",
+   "email": "Jeff.Preptit@nashville.gov",
+   "phone": "615-432-1325",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-25",
+   "photo": "photos/jeff-preptit.jpg",
+   "bio": "Civil rights attorney with a law degree from Lincoln Memorial University.",
+   "committees": [
+    "Rules, Confirmations and Public Elections, Chair",
+    "Public Health and Safety, Member",
+    "Charter Revision, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/jeff-preptit"
+   },
+   "attendance": {
+    "attended": 73,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2025-11-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2112&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-12-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2114&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 230,
+   "name": "Courtney Johnston",
+   "district": 26,
+   "seatNo": null,
+   "area": "Crieve Hall",
+   "email": "Courtney.Johnston@nashville.gov",
+   "phone": "615-432-1326",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-26",
+   "photo": "photos/courtney-johnston.jpg",
+   "bio": "Real estate agent with Synergy Realty, former owner of Acklen Park Café and Catering, and former Deutsche Bank debt reorganization specialist. Holds a finance degree from LSU.",
+   "committees": [
+    "Budget and Finance, Member",
+    "Rules, Confirmations, and Public Elections, Member",
+    "Charter Revision, Member",
+    "Audit Committee, Member"
+   ],
+   "newsletter": {
+    "label": "Updates",
+    "url": "https://district26nashville.com/news-and-updates/"
+   },
+   "attendance": {
+    "attended": 61,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2023-11-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1749&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-03-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1799&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-05-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1829&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-06-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1831&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-07-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1834&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-12-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1845&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-10",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2002&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-07-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2004&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-08-05",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2006&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-12-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2114&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-02-03",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2184&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-05-19",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2305&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2192&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-11-05",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2203&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 231,
+   "name": "Bob Nash",
+   "district": 27,
+   "seatNo": null,
+   "area": "South Nashville",
+   "email": "Bob.Nash@nashville.gov",
+   "phone": "615-432-1327",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-27",
+   "photo": "photos/bob-nash.jpg",
+   "bio": "Retired after 33 years with the Metro Nashville Police Department as commander of the East Precinct. Holds a criminal justice degree from MTSU.",
+   "committees": [
+    "Arts, Parks, Libraries, and Entertainment, Member",
+    "Public Health and Safety, Member",
+    "Safety Advisory Board, Member"
+   ],
+   "newsletter": null,
+   "attendance": {
+    "attended": 73,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-10-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1841&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-08-19",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2007&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 287,
+   "name": "David Benton",
+   "district": 28,
+   "seatNo": null,
+   "area": "Antioch, Priest Lake",
+   "email": "David.Benton@nashville.gov",
+   "phone": "615-432-1328",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-28",
+   "photo": "photos/david-benton.jpg",
+   "bio": "Pharmacist trained at the University of Louisiana Monroe School of Pharmacy with a background in pharmacy management. Serves as an HOA vice president.",
+   "committees": [
+    "Public Health and Safety, Member",
+    "Government Operations and Regulations, Member"
+   ],
+   "newsletter": null,
+   "attendance": {
+    "attended": 70,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-09-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1839&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-10",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2002&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-12-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2114&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2192&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-11-05",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2203&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 294,
+   "name": "Tasha Ellis",
+   "district": 29,
+   "seatNo": null,
+   "area": "Antioch area",
+   "email": "Tasha.Ellis@nashville.gov",
+   "phone": "615-432-1329",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-29",
+   "photo": "photos/tasha-ellis.jpg",
+   "bio": "Elected in 2023. Holds a BBA from Tennessee State University and an MBA from Trevecca Nazarene University.",
+   "committees": [
+    "Transportation and Infrastructure, Member",
+    "Government Operations and Regulations, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/tasha-ellis"
+   },
+   "attendance": {
+    "attended": 73,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-08-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1837&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-10",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2002&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 234,
+   "name": "Sandra Sepulveda",
+   "district": 30,
+   "seatNo": null,
+   "area": "Haywood Lane",
+   "email": "Sandra.Sepulveda@nashville.gov",
+   "phone": "615-432-1330",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-30",
+   "photo": "photos/sandra-sepulveda.jpg",
+   "bio": "Holds a BA in history and political science from Trevecca Nazarene University. Member of the Tennessee Immigrant and Refugee Rights Coalition and former board member of Casa de la Cultura.",
+   "committees": [
+    "President Pro Tempore",
+    "Rules, Confirmations, Public Elections, Member",
+    "Transportation and Infrastructure, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter",
+    "url": "https://www.sandrafornashville.com/newsletter"
+   },
+   "attendance": {
+    "attended": 69,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2025-03-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1995&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-10",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2002&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-10-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2010&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-02-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2185&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-04-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2188&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2193&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 235,
+   "name": "John Rutherford",
+   "district": 31,
+   "seatNo": null,
+   "area": "Cane Ridge area",
+   "email": "John.Rutherford@nashville.gov",
+   "phone": "615-432-1331",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-31",
+   "photo": "photos/john-rutherford.jpg",
+   "bio": "U.S. Air Force veteran and former nonprofit executive with a public administration degree from UT Martin. Founding member and co-chair of the council's Veterans Caucus.",
+   "committees": [
+    "Planning and Zoning, Vice Chair",
+    "Charter Revision, Member",
+    "Rules, Confirmations and Public Elections, Member",
+    "Continuum of Care Homelessness Planning Council, Member"
+   ],
+   "newsletter": null,
+   "attendance": {
+    "attended": 71,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-10-01",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1840&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-05-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2190&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2193&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-10-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2202&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 236,
+   "name": "Joy Styles",
+   "district": 32,
+   "seatNo": null,
+   "area": "Antioch, Cane Ridge",
+   "email": "Joy.Styles@nashville.gov",
+   "phone": "615-432-1332",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-32",
+   "photo": "photos/joy-styles.jpg",
+   "bio": "Actress, songwriter, recording artist and nonprofit director with degrees from Wellesley and Purdue. Chairs the council's Women's Caucus and founded Southeast Community Day in Antioch.",
+   "committees": [
+    "Arts, Parks, Libraries, and Entertainment, Member",
+    "Government Operations and Regulations, Member",
+    "Pets Policy Working Group, Co-Chair"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/joy-styles"
+   },
+   "attendance": {
+    "attended": 67,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2025-01-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1985&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-10",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2002&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-07-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2005&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-08-19",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2007&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-09-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2009&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-11-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2112&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2193&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-10-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2202&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 237,
+   "name": "Antoinette Lee",
+   "district": 33,
+   "seatNo": null,
+   "area": "Cane Ridge",
+   "email": "Antoinette.Lee@nashville.gov",
+   "phone": "615-432-1333",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-33",
+   "photo": "photos/antoinette-lee.jpg",
+   "bio": "Former teacher and Tennessee Education Association field organizer and state lobbyist. Holds a master's in organizational management.",
+   "committees": [
+    "Arts, Parks, Libraries, and Entertainment, Member",
+    "Government Operations, Member"
+   ],
+   "newsletter": null,
+   "attendance": {
+    "attended": 63,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2023-11-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1749&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-06-11",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1832&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-07-16",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1835&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-08-20",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1837&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-04-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1998&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-10",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2002&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-07-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2005&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-10-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2011&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-11-18",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2112&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-12-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2113&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-06-09",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2193&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-07-07",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2195&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 288,
+   "name": "Sandy Ewing",
+   "district": 34,
+   "seatNo": null,
+   "area": "Green Hills, Forest Hills",
+   "email": "Sandy.Ewing@nashville.gov",
+   "phone": "615-432-1334",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-34",
+   "photo": "photos/sandy-ewing.jpg",
+   "bio": "Sustainability senior manager at Lendlease with a PhD in sustainability and environmental management. Former assistant director of Metro General Services building operations and former USAID environmental project officer.",
+   "committees": [
+    "Arts, Parks, Libraries, and Entertainment, Member",
+    "Transportation and Infrastructure, Member",
+    "Greenways and Open Spaces Commission, Member",
+    "Sustainability Advisory Committee, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/sandy-ewing"
+   },
+   "attendance": {
+    "attended": 68,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2023-12-05",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1784&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-04-02",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1801&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-12-03",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1844&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-03-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1995&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-07-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2005&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-03-17",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2187&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-08-04",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2197&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 289,
+   "name": "Jason Spain",
+   "district": 35,
+   "seatNo": null,
+   "area": "Western Bellevue",
+   "email": "Jason.Spain@nashville.gov",
+   "phone": "615-432-1335",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/district-35",
+   "photo": "photos/jason-spain.jpg",
+   "bio": "Executive director of the Tennessee Public Transportation Association. Holds public administration degrees from Tennessee State (MPA) and UT Knoxville.",
+   "committees": [
+    "Budget and Finance, Member",
+    "Transportation and Infrastructure, Member"
+   ],
+   "newsletter": {
+    "label": "Newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/jason-spain"
+   },
+   "attendance": {
+    "attended": 70,
+    "total": 75,
+    "missed": [
+     {
+      "date": "2024-06-11",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1832&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2024-10-15",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=1841&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-06-03",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2001&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2025-10-21",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2011&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     },
+     {
+      "date": "2026-11-05",
+      "url": "https://nashville.legistar.com/MeetingDetail.aspx?LEGID=2203&GID=787&G=99456586-FDA1-4896-A3EB-8389754A06F8"
+     }
+    ],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  },
+  {
+   "pid": 238,
+   "name": "Angie Henderson",
+   "district": null,
+   "seatNo": null,
+   "area": "Presides over the council",
+   "email": "Angie.Henderson@nashville.gov",
+   "phone": "615-880-3357",
+   "office": "Historic Metro Courthouse, 1 Public Square, Suite 204, Nashville, TN 37201",
+   "page": "https://www.nashville.gov/departments/council/districts/vice-mayor",
+   "photo": "photos/angie-henderson.jpg",
+   "bio": "Vice Mayor and president of the Metro Council, who presides over meetings and votes only to break a tie. Represented District 34 from 2015 to 2023 and holds a BA in the growth and structure of cities from Bryn Mawr College.",
+   "committees": [
+    "Presiding officer, Metropolitan Council",
+    "Audit Committee",
+    "Transportation Policy Board, Greater Nashville Regional Council"
+   ],
+   "newsletter": null,
+   "vm": true,
+   "attendance": {
+    "attended": 75,
+    "total": 75,
+    "missed": [],
+    "byRollCall": 75,
+    "byVotes": 0
+   }
+  }
+ ]
+}

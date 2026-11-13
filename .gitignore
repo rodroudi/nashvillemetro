@@ -1,0 +1,4 @@
+data/raw_votes.json
+data/raw_attendance.json
+__pycache__/
+scripts/__pycache__/
