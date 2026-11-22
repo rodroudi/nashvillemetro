@@ -1,0 +1,21 @@
+{
+ "pid": 233,
+ "slug": "delishia-porterfield",
+ "name": "Delishia Porterfield",
+ "handle": null,
+ "profileUrl": null,
+ "profileName": null,
+ "protected": false,
+ "bio": "",
+ "handleSource": null,
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "not_found",
+  "note": "Ballotpedia linked https://x.com/DelishiaForNash. That profile returned not found on this date."
+ },
+ "fetchedAt": null,
+ "fetchStatus": "no_handle",
+ "fetchNote": "No verified handle, so there are no posts to load.",
+ "truncated": false,
+ "posts": []
+}

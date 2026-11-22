@@ -1,0 +1,21 @@
+{
+ "pid": 290,
+ "slug": "quin-evans-segall",
+ "name": "Quin Evans-Segall",
+ "handle": null,
+ "profileUrl": null,
+ "profileName": null,
+ "protected": false,
+ "bio": "",
+ "handleSource": null,
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "not_found",
+  "note": "quinforcouncil.com lists no X account. A Bluesky account exists and is not used here, because this component is X only."
+ },
+ "fetchedAt": null,
+ "fetchStatus": "no_handle",
+ "fetchNote": "No verified handle, so there are no posts to load.",
+ "truncated": false,
+ "posts": []
+}

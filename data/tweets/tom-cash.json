@@ -1,0 +1,25 @@
+{
+ "pid": 222,
+ "slug": "tom-cash",
+ "name": "Tom Cash",
+ "handle": "CashforCouncil",
+ "profileUrl": "https://x.com/CashforCouncil",
+ "profileName": "TomCashforCouncil",
+ "protected": false,
+ "bio": "Lifelong Nashvillian, educator, and Council Member for District 18",
+ "handleSource": {
+  "title": "votetomcash.com",
+  "url": "https://www.votetomcash.com/",
+  "checked": "2026-11-22",
+  "note": "The campaign site links https://twitter.com/CashforCouncil. The bio says Council Member for District 18."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

@@ -1,0 +1,25 @@
+{
+ "pid": 292,
+ "slug": "mike-cortese",
+ "name": "Mike Cortese",
+ "handle": "MikeForTennesee",
+ "profileUrl": "https://x.com/MikeForTennesee",
+ "profileName": "Mike Cortese",
+ "protected": false,
+ "bio": "Father, husband, professor, Metro Councilman, and congressional candidate in TN-4.",
+ "handleSource": {
+  "title": "Ballotpedia page for Mike Cortese",
+  "url": "https://ballotpedia.org/Mike_Cortese",
+  "checked": "2026-11-22",
+  "note": "Ballotpedia links https://x.com/MikeForTennesee. The handle is spelled that way on the profile. The bio says Metro Councilman."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

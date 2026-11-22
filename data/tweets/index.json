@@ -1,0 +1,972 @@
+{
+ "byPid": {
+  "204": {
+   "pid": 204,
+   "slug": "zulfat-suara",
+   "name": "Zulfat Suara",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "A social icon in the Nashville Newsletters archive links twitter.com/zulfatsuara. That profile returned not found on this date. The nashville.gov page does not list a personal X account."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "233": {
+   "pid": 233,
+   "slug": "delishia-porterfield",
+   "name": "Delishia Porterfield",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "Ballotpedia linked https://x.com/DelishiaForNash. That profile returned not found on this date."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "290": {
+   "pid": 290,
+   "slug": "quin-evans-segall",
+   "name": "Quin Evans-Segall",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "quinforcouncil.com lists no X account. A Bluesky account exists and is not used here, because this component is X only."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "202": {
+   "pid": 202,
+   "slug": "burkley-allen",
+   "name": "Burkley Allen",
+   "handle": "AllenBurkley",
+   "profileUrl": "https://x.com/AllenBurkley",
+   "profileName": "Council Member Burkley Allen",
+   "protected": false,
+   "bio": "Burkley Allen is a Metro Council Member at-Large. She formerly served as District Council Member for District 18.",
+   "handleSource": {
+    "title": "Public X profile",
+    "url": "https://x.com/AllenBurkley",
+    "checked": "2026-11-22",
+    "note": "The profile name and bio identify her as the at-large council member."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "291": {
+   "pid": 291,
+   "slug": "olivia-hill",
+   "name": "Olivia Hill",
+   "handle": "Oliviafornash",
+   "profileUrl": "https://x.com/Oliviafornash",
+   "profileName": "Olivia Hill",
+   "protected": false,
+   "bio": "Metro Council At-Large | Metro Council Member at-Large, Navy Vet.",
+   "handleSource": {
+    "title": "voteoliviahill.com",
+    "url": "https://voteoliviahill.com/",
+    "checked": "2026-11-22",
+    "note": "The campaign site links https://x.com/Oliviafornash. The profile bio says Metro Council at-large."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "275": {
+   "pid": 275,
+   "slug": "joy-kimbrough",
+   "name": "Joy Kimbrough",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "No personal X account was verified from her nashville.gov page or newsletter archive."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "206": {
+   "pid": 206,
+   "slug": "kyonzte-toombs",
+   "name": "Kyonzté Toombs",
+   "handle": "toombsfortwo",
+   "profileUrl": "https://x.com/toombsfortwo",
+   "profileName": "Kyonzte Toombs",
+   "protected": false,
+   "bio": "Councilwoman for District 2, Nashville Metro Council",
+   "handleSource": {
+    "title": "toombsfortwo.com",
+    "url": "https://toombsfortwo.com/",
+    "checked": "2026-11-22",
+    "note": "Her campaign site links https://x.com/toombsfortwo and the bio names the District 2 seat. Ballotpedia also lists @fly_attorney, which is a second account under her name and is not the one scored."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "207": {
+   "pid": 207,
+   "slug": "jennifer-gamble",
+   "name": "Jennifer Gamble",
+   "handle": "JGamble4Council",
+   "profileUrl": "https://x.com/JGamble4Council",
+   "profileName": "Jennifer Gamble",
+   "protected": false,
+   "bio": "Lifelong Moderate Democrat",
+   "handleSource": {
+    "title": "Jennifer Gamble newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/jennifer-gamble",
+    "checked": "2026-11-22",
+    "note": "The archive repeats a social link to twitter.com/JGamble4Council. The profile name is Jennifer Gamble."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "292": {
+   "pid": 292,
+   "slug": "mike-cortese",
+   "name": "Mike Cortese",
+   "handle": "MikeForTennesee",
+   "profileUrl": "https://x.com/MikeForTennesee",
+   "profileName": "Mike Cortese",
+   "protected": false,
+   "bio": "Father, husband, professor, Metro Councilman, and congressional candidate in TN-4.",
+   "handleSource": {
+    "title": "Ballotpedia page for Mike Cortese",
+    "url": "https://ballotpedia.org/Mike_Cortese",
+    "checked": "2026-11-22",
+    "note": "Ballotpedia links https://x.com/MikeForTennesee. The handle is spelled that way on the profile. The bio says Metro Councilman."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "209": {
+   "pid": 209,
+   "slug": "sean-parker",
+   "name": "Sean Parker",
+   "handle": "SeanForFive",
+   "profileUrl": "https://x.com/SeanForFive",
+   "profileName": "Sean Parker is FOR Transit",
+   "protected": false,
+   "bio": "Councilmember for Nashville's 5th District. Housing, safe streets, and effective services.",
+   "handleSource": {
+    "title": "seanforfive.com",
+    "url": "https://seanforfive.com/",
+    "checked": "2026-11-22",
+    "note": "The campaign site and the newsletter archive both link @SeanForFive. The profile bio names District 5."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": "2026-11-22T18:40:00Z",
+   "fetchStatus": "partial",
+   "fetchNote": "One public post was verified by its status URL on the syndication payload. replyCount is that payload's conversation_count (24) and likeCount is favorite_count (16). Repost and quote counts were not in the payload and are null. The file is not a full lookback, so online engagement and decency are not scored from it.",
+   "truncated": false,
+   "posts": [
+    {
+     "id": "2124211124061045000",
+     "url": "https://x.com/SeanForFive/status/2124211124061045000",
+     "text": "@Steve_sjfsongs Why don’t you ask grok you bluechecked dork",
+     "createdAt": "2026-11-21T18:39:32.000Z",
+     "replyCount": 24,
+     "repostCount": null,
+     "likeCount": 16,
+     "quoteCount": null,
+     "isReply": true,
+     "isRetweet": false,
+     "lang": "en"
+    }
+   ]
+  },
+  "276": {
+   "pid": 276,
+   "slug": "clay-capp",
+   "name": "Clay Capp",
+   "handle": "claycapp",
+   "profileUrl": "https://x.com/claycapp",
+   "profileName": "Clay Capp",
+   "protected": false,
+   "bio": "Nashville native, raising two more. Council Member for District 6.",
+   "handleSource": {
+    "title": "Ballotpedia page for Clay Capp",
+    "url": "https://ballotpedia.org/Clay_Capp",
+    "checked": "2026-11-22",
+    "note": "Ballotpedia links https://x.com/claycapp. The bio says Council Member for District 6."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "211": {
+   "pid": 211,
+   "slug": "emily-benedict",
+   "name": "Emily Benedict",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "A 2020 WTVF article quoted @emilyfor7. That profile did not resolve to a public account on this date, so it is not listed."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "277": {
+   "pid": 277,
+   "slug": "deonte-harrell",
+   "name": "Deonté Harrell",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "No personal X account was verified from the nashville.gov page."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "213": {
+   "pid": 213,
+   "slug": "tonya-hancock",
+   "name": "Tonya Hancock",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "No personal X account was verified from the nashville.gov page or newsletter archive."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "278": {
+   "pid": 278,
+   "slug": "jennifer-frensley-webb",
+   "name": "Jennifer Frensley Webb",
+   "handle": "voteJFW",
+   "profileUrl": "https://x.com/voteJFW",
+   "profileName": "Jennifer Frensley Webb",
+   "protected": false,
+   "bio": "",
+   "handleSource": {
+    "title": "Ballotpedia page for Jennifer Frensley Webb",
+    "url": "https://ballotpedia.org/Jennifer_Frensley_Webb",
+    "checked": "2026-11-22",
+    "note": "Ballotpedia links https://x.com/voteJFW. The profile name is Jennifer Frensley Webb."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "293": {
+   "pid": 293,
+   "slug": "jeff-eslick",
+   "name": "Jeff Eslick",
+   "handle": "jeff_eslick",
+   "profileUrl": "https://x.com/jeff_eslick",
+   "profileName": "Jeff Eslick",
+   "protected": false,
+   "bio": "I am running because District 11 needs a neighbor. Metro Council doesn't need another political activist.",
+   "handleSource": {
+    "title": "Ballotpedia page for Jeff Eslick",
+    "url": "https://ballotpedia.org/Jeff_Eslick",
+    "checked": "2026-11-22",
+    "note": "Ballotpedia links https://x.com/jeff_eslick. The bio names District 11."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "216": {
+   "pid": 216,
+   "slug": "erin-evans",
+   "name": "Erin Evans",
+   "handle": "Erinfor12",
+   "profileUrl": "https://x.com/Erinfor12",
+   "profileName": "Erin Evans",
+   "protected": false,
+   "bio": "Erin Evans is Metro Nashville Councilmember for District 12 (Hermitage, Tenn)",
+   "handleSource": {
+    "title": "Erin Evans newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/erin-evans",
+    "checked": "2026-11-22",
+    "note": "The archive uses a social icon linking to twitter.com/Erinfor12. The bio names District 12."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "217": {
+   "pid": 217,
+   "slug": "russ-bradford",
+   "name": "Russ Bradford",
+   "handle": "Bradford4D13",
+   "profileUrl": "https://x.com/Bradford4D13",
+   "profileName": "Councilman Russ Bradford",
+   "protected": false,
+   "bio": "Metro Council District 13.",
+   "handleSource": {
+    "title": "Russ Bradford newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/russ-bradford",
+    "checked": "2026-11-22",
+    "note": "The archive repeats links to twitter.com/bradford4d13. The bio says Metro Council District 13."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "279": {
+   "pid": 279,
+   "slug": "jordan-huffman",
+   "name": "Jordan Huffman",
+   "handle": "JordanHuffman",
+   "profileUrl": "https://x.com/JordanHuffman",
+   "profileName": "Councilman Jordan Huffman",
+   "protected": false,
+   "bio": "Nashville Metro Council Member (D14).",
+   "handleSource": {
+    "title": "Jordan Huffman newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/jordan-huffman",
+    "checked": "2026-11-22",
+    "note": "The archive links twitter.com/jordanhuffman. The bio says Nashville Metro Council Member (D14)."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "280": {
+   "pid": 280,
+   "slug": "jeff-gregg",
+   "name": "Jeff Gregg",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "No personal X account was verified from the nashville.gov page or newsletter archive."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "220": {
+   "pid": 220,
+   "slug": "ginny-welsch",
+   "name": "Ginny Welsch",
+   "handle": "GinnyWelsch",
+   "profileUrl": "https://x.com/GinnyWelsch",
+   "profileName": "no pass for fascism",
+   "protected": true,
+   "bio": "",
+   "handleSource": {
+    "title": "Ginny Welsch newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/ginny-welsch",
+    "checked": "2026-11-22",
+    "note": "The archive and Ballotpedia (https://ballotpedia.org/Ginny_Welsch) link @GinnyWelsch. On this date the profile display name was \"no pass for fascism\" and posts were protected, so no post text was read."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": "2026-11-22T00:00:00Z",
+   "fetchStatus": "protected",
+   "fetchNote": "The account is protected. Posts were not read. Online engagement and decency are left out of the score rather than treated as zero.",
+   "truncated": false,
+   "posts": []
+  },
+  "281": {
+   "pid": 281,
+   "slug": "terry-vo",
+   "name": "Terry Vo",
+   "handle": "terryvofornash",
+   "profileUrl": "https://x.com/terryvofornash",
+   "profileName": "Terry Vo for Nashville",
+   "protected": false,
+   "bio": "Inclusion. Integrity. Kindness | District 17 Metropolitan Councilmember",
+   "handleSource": {
+    "title": "Terry Vo newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/terry-vo",
+    "checked": "2026-11-22",
+    "note": "The archive uses a social icon linking to twitter.com/terryvofornash. The bio says District 17 Metropolitan Councilmember."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "222": {
+   "pid": 222,
+   "slug": "tom-cash",
+   "name": "Tom Cash",
+   "handle": "CashforCouncil",
+   "profileUrl": "https://x.com/CashforCouncil",
+   "profileName": "TomCashforCouncil",
+   "protected": false,
+   "bio": "Lifelong Nashvillian, educator, and Council Member for District 18",
+   "handleSource": {
+    "title": "votetomcash.com",
+    "url": "https://www.votetomcash.com/",
+    "checked": "2026-11-22",
+    "note": "The campaign site links https://twitter.com/CashforCouncil. The bio says Council Member for District 18."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "282": {
+   "pid": 282,
+   "slug": "jacob-kupin",
+   "name": "Jacob Kupin",
+   "handle": "JacobKupin4D19",
+   "profileUrl": "https://x.com/JacobKupin4D19",
+   "profileName": "Jacob Kupin",
+   "protected": false,
+   "bio": "District 19 Councilperson, Passionate Collaborator",
+   "handleSource": {
+    "title": "jacobkupin.com",
+    "url": "https://www.jacobkupin.com/",
+    "checked": "2026-11-22",
+    "note": "The campaign site links https://twitter.com/JacobKupin4D19. The bio says District 19 Councilperson."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "283": {
+   "pid": 283,
+   "slug": "rollin-horton",
+   "name": "Rollin Horton",
+   "handle": "HortonRollin",
+   "profileUrl": "https://x.com/HortonRollin",
+   "profileName": "Rollin Horton",
+   "protected": false,
+   "bio": "Nashville Metro Council Member District 20. The Nations, Charlotte Robertson, White Bridge, Hillwood.",
+   "handleSource": {
+    "title": "Public X profile",
+    "url": "https://x.com/HortonRollin",
+    "checked": "2026-11-22",
+    "note": "The profile name and bio identify him as the District 20 council member. His newsletter is the Westside Stories Substack."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "225": {
+   "pid": 225,
+   "slug": "brandon-taylor",
+   "name": "Brandon Taylor",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "No personal X account was verified from the nashville.gov page or newsletter archive."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "284": {
+   "pid": 284,
+   "slug": "sheri-weiner",
+   "name": "Sheri Weiner",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "No personal X account was verified. The newsletter archive links a Metro Planning post, not her account."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "227": {
+   "pid": 227,
+   "slug": "thom-druffel",
+   "name": "Thom Druffel",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "thomdruffel.com lists no X account."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "285": {
+   "pid": 285,
+   "slug": "brenda-gadd",
+   "name": "Brenda Gadd",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "brendafornashville.com lists no X account. A Bluesky account exists and is not used here."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "286": {
+   "pid": 286,
+   "slug": "jeff-preptit",
+   "name": "Jeff Preptit",
+   "handle": "JLPreptit",
+   "profileUrl": "https://x.com/JLPreptit",
+   "profileName": "Jeff L Preptit, Esq.",
+   "protected": false,
+   "bio": "Civil Rights Attorney",
+   "handleSource": {
+    "title": "Jeff Preptit newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/jeff-preptit",
+    "checked": "2026-11-22",
+    "note": "The archive uses a social icon linking to twitter.com/JLPreptit. The profile name is Jeff L Preptit, Esq."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "230": {
+   "pid": 230,
+   "slug": "courtney-johnston",
+   "name": "Courtney Johnston",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "district26nashville.com lists no X account."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "231": {
+   "pid": 231,
+   "slug": "bob-nash",
+   "name": "Bob Nash",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "No personal X account was verified from the nashville.gov page. He is not the other public figures named Bob Nash."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "287": {
+   "pid": 287,
+   "slug": "david-benton",
+   "name": "David Benton",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "No personal X account was verified from the nashville.gov page."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "294": {
+   "pid": 294,
+   "slug": "tasha-ellis",
+   "name": "Tasha Ellis",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "No personal X account was verified from the nashville.gov page or newsletter archive."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "234": {
+   "pid": 234,
+   "slug": "sandra-sepulveda",
+   "name": "Sandra Sepulveda",
+   "handle": "SandraForNash",
+   "profileUrl": "https://x.com/SandraForNash",
+   "profileName": "Sandra Sepulveda",
+   "protected": false,
+   "bio": "",
+   "handleSource": {
+    "title": "sandrafornashville.com contact page",
+    "url": "https://www.sandrafornashville.com/contact",
+    "checked": "2026-11-22",
+    "note": "The contact page links https://twitter.com/SandraForNash. The profile name is Sandra Sepulveda and the profile header reported 0 posts."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": "2026-11-22T00:00:00Z",
+   "fetchStatus": "ok",
+   "fetchNote": "The public profile header reported 0 posts on this date, so the lookback window contains no posts. Repost and like counts are not applicable.",
+   "truncated": false,
+   "posts": [],
+   "profilePostCount": 0
+  },
+  "235": {
+   "pid": 235,
+   "slug": "john-rutherford",
+   "name": "John Rutherford",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "No personal X account was verified. He is not the Florida member of Congress who uses a similar name."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "236": {
+   "pid": 236,
+   "slug": "joy-styles",
+   "name": "Joy Styles",
+   "handle": "Stylesfor32",
+   "profileUrl": "https://x.com/Stylesfor32",
+   "profileName": "JoyStylesforDistrict32",
+   "protected": false,
+   "bio": "Councilwoman for District 32. Bridge Builder. Passionate about people",
+   "handleSource": {
+    "title": "Ballotpedia page for Joy Styles",
+    "url": "https://ballotpedia.org/Joy_Styles",
+    "checked": "2026-11-22",
+    "note": "Ballotpedia links https://x.com/Stylesfor32. The bio says Councilwoman for District 32."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "237": {
+   "pid": 237,
+   "slug": "antoinette-lee",
+   "name": "Antoinette Lee",
+   "handle": "MrsALee",
+   "profileUrl": "https://x.com/MrsALee",
+   "profileName": "Antoinette Lee",
+   "protected": false,
+   "bio": "I'm active in TN state politics, and I advocate for public school education and public education employees.",
+   "handleSource": {
+    "title": "Ballotpedia page for Antoinette Lee",
+    "url": "https://ballotpedia.org/Antoinette_Lee",
+    "checked": "2026-11-22",
+    "note": "Ballotpedia links https://x.com/MrsALee. The profile name is Antoinette Lee. The bio does not itself say Metro Council."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "288": {
+   "pid": 288,
+   "slug": "sandy-ewing",
+   "name": "Sandy Ewing",
+   "handle": null,
+   "profileUrl": null,
+   "profileName": null,
+   "protected": false,
+   "bio": "",
+   "handleSource": null,
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "not_found",
+    "note": "No personal X account was verified from the nashville.gov page or newsletter archive."
+   },
+   "fetchedAt": null,
+   "fetchStatus": "no_handle",
+   "fetchNote": "No verified handle, so there are no posts to load.",
+   "truncated": false,
+   "posts": []
+  },
+  "289": {
+   "pid": 289,
+   "slug": "jason-spain",
+   "name": "Jason Spain",
+   "handle": "JasonSpainTN",
+   "profileUrl": "https://x.com/JasonSpainTN",
+   "profileName": "Jason Spain",
+   "protected": false,
+   "bio": "Nashville Metro Council Member, District 35. Executive Director, Tennessee Public Transportation Association.",
+   "handleSource": {
+    "title": "Jason Spain newsletter archive",
+    "url": "https://www.nashvillenewsletters.org/member/jason-spain",
+    "checked": "2026-11-22",
+    "note": "The archive links twitter.com/JasonSpainTN. The bio says Nashville Metro Council Member, District 35."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  },
+  "238": {
+   "pid": 238,
+   "slug": "angie-henderson",
+   "name": "Angie Henderson",
+   "handle": "angienashville",
+   "profileUrl": "https://x.com/angienashville",
+   "profileName": "Angie E. Henderson",
+   "protected": false,
+   "bio": "Vice Mayor of Nashville. President of #MetroCouncilNash. Not a govt/official acct.",
+   "handleSource": {
+    "title": "Ballotpedia page for Angie Henderson",
+    "url": "https://ballotpedia.org/Angie_Henderson",
+    "checked": "2026-11-22",
+    "note": "Ballotpedia links https://x.com/angienashville. Her bio says Vice Mayor and also says the account is not an official government account."
+   },
+   "handleCheck": {
+    "checked": "2026-11-22",
+    "result": "verified"
+   },
+   "fetchedAt": null,
+   "fetchStatus": "pending",
+   "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+   "truncated": false,
+   "posts": []
+  }
+ }
+}

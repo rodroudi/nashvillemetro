@@ -1,0 +1,25 @@
+{
+ "pid": 236,
+ "slug": "joy-styles",
+ "name": "Joy Styles",
+ "handle": "Stylesfor32",
+ "profileUrl": "https://x.com/Stylesfor32",
+ "profileName": "JoyStylesforDistrict32",
+ "protected": false,
+ "bio": "Councilwoman for District 32. Bridge Builder. Passionate about people",
+ "handleSource": {
+  "title": "Ballotpedia page for Joy Styles",
+  "url": "https://ballotpedia.org/Joy_Styles",
+  "checked": "2026-11-22",
+  "note": "Ballotpedia links https://x.com/Stylesfor32. The bio says Councilwoman for District 32."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

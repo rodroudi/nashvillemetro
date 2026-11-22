@@ -1,0 +1,25 @@
+{
+ "pid": 282,
+ "slug": "jacob-kupin",
+ "name": "Jacob Kupin",
+ "handle": "JacobKupin4D19",
+ "profileUrl": "https://x.com/JacobKupin4D19",
+ "profileName": "Jacob Kupin",
+ "protected": false,
+ "bio": "District 19 Councilperson, Passionate Collaborator",
+ "handleSource": {
+  "title": "jacobkupin.com",
+  "url": "https://www.jacobkupin.com/",
+  "checked": "2026-11-22",
+  "note": "The campaign site links https://twitter.com/JacobKupin4D19. The bio says District 19 Councilperson."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

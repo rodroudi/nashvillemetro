@@ -1,0 +1,25 @@
+{
+ "pid": 216,
+ "slug": "erin-evans",
+ "name": "Erin Evans",
+ "handle": "Erinfor12",
+ "profileUrl": "https://x.com/Erinfor12",
+ "profileName": "Erin Evans",
+ "protected": false,
+ "bio": "Erin Evans is Metro Nashville Councilmember for District 12 (Hermitage, Tenn)",
+ "handleSource": {
+  "title": "Erin Evans newsletter archive",
+  "url": "https://www.nashvillenewsletters.org/member/erin-evans",
+  "checked": "2026-11-22",
+  "note": "The archive uses a social icon linking to twitter.com/Erinfor12. The bio names District 12."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

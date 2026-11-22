@@ -1,0 +1,5596 @@
+{
+ "version": "1.0.0",
+ "name": "Dolly Servitude score",
+ "computedAt": "2026-11-22T18:30:10Z",
+ "windowEnds": "2026-11-22",
+ "inputsAsOf": {
+  "votes": "2026-11-13 15:52 CT",
+  "handlesChecked": "2026-11-22"
+ },
+ "parameters": {
+  "onlineLookbackDays": 90,
+  "onlineFullCreditPosts": 8,
+  "decencyMinPosts": 5,
+  "shoutingMinLetters": 40,
+  "shoutingCapsRatio": 0.7,
+  "newsletterLookbackDays": 365,
+  "newsletterFullCredit": 6,
+  "communityLookbackDays": 365,
+  "communityFullCredit": 6,
+  "repliesLookbackDays": 365,
+  "repliesFullCredit": 12,
+  "newsletterExcludeUrlPrefixes": [
+   "https://public.govdelivery.com/"
+  ]
+ },
+ "rounding": "Each component's points are rounded to one decimal, half up, before weighting. The weighted average is then rounded to an integer, half up. The tile shows that integer.",
+ "missingData": "If a component has no usable data for a member, that component is left out for that member. It is not scored as zero. The member's score is the weighted average of the components that do have data, so those weights are scaled to 0–100. Coverage is the share of all weight that had data. The same rule applies to every member. A filed record that is genuinely empty (for example a post file whose fetchStatus is ok and whose post list is empty, or a newsletter check that found no link) is data, and it scores zero for that component. A missing file is not data.",
+ "population": [
+  {
+   "id": "council_attendance",
+   "name": "Council meeting attendance",
+   "weight": 30,
+   "scoredMembers": 41,
+   "missingMembers": 0
+  },
+  {
+   "id": "vote_presence",
+   "name": "Vote presence",
+   "weight": 20,
+   "scoredMembers": 41,
+   "missingMembers": 0
+  },
+  {
+   "id": "newsletter",
+   "name": "Constituent newsletter",
+   "weight": 10,
+   "scoredMembers": 41,
+   "missingMembers": 0
+  },
+  {
+   "id": "online_engagement",
+   "name": "Online engagement",
+   "weight": 15,
+   "scoredMembers": 1,
+   "missingMembers": 40
+  },
+  {
+   "id": "decency",
+   "name": "Decency (tone)",
+   "weight": 10,
+   "scoredMembers": 0,
+   "missingMembers": 41
+  },
+  {
+   "id": "community_meetings",
+   "name": "Community meetings",
+   "weight": 10,
+   "scoredMembers": 0,
+   "missingMembers": 41
+  },
+  {
+   "id": "constituent_replies",
+   "name": "Constituent replies",
+   "weight": 5,
+   "scoredMembers": 0,
+   "missingMembers": 41
+  }
+ ],
+ "members": [
+  {
+   "pid": 204,
+   "slug": "zulfat-suara",
+   "name": "Zulfat Suara",
+   "seat": "At-large",
+   "score": 87,
+   "raw": 86.55,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "86.7×30 + 79.6×20 + 100.0×10 = 5193.0; ÷ 60 = 86.55; rounds to 87",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 86.7,
+     "input": "65 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 79.6,
+     "input": "382 present out of 480 recorded votes; 98 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/zulfat-suara.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/zulfat-suara"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "A social icon in the Nashville Newsletters archive links twitter.com/zulfatsuara. That profile returned not found on this date. The nashville.gov page does not list a personal X account.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 233,
+   "slug": "delishia-porterfield",
+   "name": "Delishia Porterfield",
+   "seat": "At-large",
+   "score": 70,
+   "raw": 70.38,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "89.3×30 + 77.2×20 + 0.0×10 = 4223.0; ÷ 60 = 70.38; rounds to 70",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 89.3,
+     "input": "67 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 77.2,
+     "input": "370 present out of 479 recorded votes; 109 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 0.0,
+     "input": "no member newsletter link on file",
+     "detail": "The hand check recorded no newsletter. That is a zero, not a missing component.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "Ballotpedia linked https://x.com/DelishiaForNash. That profile returned not found on this date.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 290,
+   "slug": "quin-evans-segall",
+   "name": "Quin Evans-Segall",
+   "seat": "At-large",
+   "score": 92,
+   "raw": 91.52,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "93.3×30 + 84.6×20 + 100.0×10 = 5491.0; ÷ 60 = 91.52; rounds to 92",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 93.3,
+     "input": "70 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 84.6,
+     "input": "405 present out of 479 recorded votes; 74 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: The Quintessentials",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/quin-evans-segall.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "The Quintessentials",
+       "url": "https://quinevanssegall.beehiiv.com/subscribe"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "quinforcouncil.com lists no X account. A Bluesky account exists and is not used here, because this component is X only.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 202,
+   "slug": "burkley-allen",
+   "name": "Burkley Allen",
+   "seat": "At-large",
+   "score": 100,
+   "raw": 99.8,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "100.0×30 + 99.4×20 + 100.0×10 = 5988.0; ÷ 60 = 99.80; rounds to 100",
+   "handle": "AllenBurkley",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 100.0,
+     "input": "75 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 99.4,
+     "input": "477 present out of 480 recorded votes; 3 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Monthly updates",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/burkley-allen.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Monthly updates",
+       "url": "https://www.burkley.org/news/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@AllenBurkley: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@AllenBurkley",
+       "url": "https://x.com/AllenBurkley"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@AllenBurkley",
+       "url": "https://x.com/AllenBurkley"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 291,
+   "slug": "olivia-hill",
+   "name": "Olivia Hill",
+   "seat": "At-large",
+   "score": 98,
+   "raw": 97.88,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "97.3×30 + 97.7×20 + 100.0×10 = 5873.0; ÷ 60 = 97.88; rounds to 98",
+   "handle": "Oliviafornash",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 97.3,
+     "input": "73 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 97.7,
+     "input": "469 present out of 480 recorded votes; 11 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Sign up on her site",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/olivia-hill.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Sign up on her site",
+       "url": "https://voteoliviahill.com/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@Oliviafornash: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@Oliviafornash",
+       "url": "https://x.com/Oliviafornash"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@Oliviafornash",
+       "url": "https://x.com/Oliviafornash"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 275,
+   "slug": "joy-kimbrough",
+   "name": "Joy Kimbrough",
+   "seat": "District 1",
+   "score": 89,
+   "raw": 89.38,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "90.7×30 + 82.1×20 + 100.0×10 = 5363.0; ÷ 60 = 89.38; rounds to 89",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 90.7,
+     "input": "68 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 82.1,
+     "input": "394 present out of 480 recorded votes; 86 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/joy-kimbrough.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/joy-kimbrough"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "No personal X account was verified from her nashville.gov page or newsletter archive.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 206,
+   "slug": "kyonzte-toombs",
+   "name": "Kyonzté Toombs",
+   "seat": "District 2",
+   "score": 94,
+   "raw": 94.08,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "97.3×30 + 86.3×20 + 100.0×10 = 5645.0; ÷ 60 = 94.08; rounds to 94",
+   "handle": "toombsfortwo",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 97.3,
+     "input": "73 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 86.3,
+     "input": "414 present out of 480 recorded votes; 66 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/kyonzte-toombs.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/kyonzte-toombs"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@toombsfortwo: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@toombsfortwo",
+       "url": "https://x.com/toombsfortwo"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@toombsfortwo",
+       "url": "https://x.com/toombsfortwo"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 207,
+   "slug": "jennifer-gamble",
+   "name": "Jennifer Gamble",
+   "seat": "District 3",
+   "score": 86,
+   "raw": 85.58,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "90.7×30 + 70.7×20 + 100.0×10 = 5135.0; ÷ 60 = 85.58; rounds to 86",
+   "handle": "JGamble4Council",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 90.7,
+     "input": "68 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 70.7,
+     "input": "338 present out of 478 recorded votes; 140 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/jennifer-gamble.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/jennifer-gamble"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@JGamble4Council: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@JGamble4Council",
+       "url": "https://x.com/JGamble4Council"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@JGamble4Council",
+       "url": "https://x.com/JGamble4Council"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 292,
+   "slug": "mike-cortese",
+   "name": "Mike Cortese",
+   "seat": "District 4",
+   "score": 78,
+   "raw": 77.6,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "92.0×30 + 94.8×20 + 0.0×10 = 4656.0; ÷ 60 = 77.60; rounds to 78",
+   "handle": "MikeForTennesee",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 92.0,
+     "input": "69 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 94.8,
+     "input": "454 present out of 479 recorded votes; 25 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 0.0,
+     "input": "no member newsletter link on file",
+     "detail": "The hand check recorded no newsletter. That is a zero, not a missing component.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@MikeForTennesee: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@MikeForTennesee",
+       "url": "https://x.com/MikeForTennesee"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@MikeForTennesee",
+       "url": "https://x.com/MikeForTennesee"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 209,
+   "slug": "sean-parker",
+   "name": "Sean Parker",
+   "seat": "District 5",
+   "score": 94,
+   "raw": 93.7,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "96.0×30 + 87.1×20 + 100.0×10 = 5622.0; ÷ 60 = 93.70; rounds to 94",
+   "handle": "SeanForFive",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 96.0,
+     "input": "72 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 87.1,
+     "input": "418 present out of 480 recorded votes; 62 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/sean-parker.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/sean-parker"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@SeanForFive: fetchStatus is partial",
+     "detail": "One public post was verified by its status URL on the syndication payload. replyCount is that payload's conversation_count (24) and likeCount is favorite_count (16). Repost and quote counts were not in the payload and are null. The file is not a full lookback, so online engagement and decency are not scored from it.",
+     "asOf": "2026-11-22T18:40:00Z",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@SeanForFive",
+       "url": "https://x.com/SeanForFive"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (partial)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": "2026-11-22T18:40:00Z",
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@SeanForFive",
+       "url": "https://x.com/SeanForFive"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 276,
+   "slug": "clay-capp",
+   "name": "Clay Capp",
+   "seat": "District 6",
+   "score": 98,
+   "raw": 98.27,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "100.0×30 + 94.8×20 + 100.0×10 = 5896.0; ÷ 60 = 98.27; rounds to 98",
+   "handle": "claycapp",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 100.0,
+     "input": "75 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 94.8,
+     "input": "455 present out of 480 recorded votes; 25 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/clay-capp.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter",
+       "url": "https://clay-capp.beehiiv.com/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@claycapp: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@claycapp",
+       "url": "https://x.com/claycapp"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@claycapp",
+       "url": "https://x.com/claycapp"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 211,
+   "slug": "emily-benedict",
+   "name": "Emily Benedict",
+   "seat": "District 7",
+   "score": 91,
+   "raw": 91.08,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "93.3×30 + 83.3×20 + 100.0×10 = 5465.0; ÷ 60 = 91.08; rounds to 91",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 93.3,
+     "input": "70 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 83.3,
+     "input": "400 present out of 480 recorded votes; 80 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/emily-benedict.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/emily-benedict"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "A 2020 WTVF article quoted @emilyfor7. That profile did not resolve to a public account on this date, so it is not listed.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 277,
+   "slug": "deonte-harrell",
+   "name": "Deonté Harrell",
+   "seat": "District 8",
+   "score": 81,
+   "raw": 81.15,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "97.3×30 + 97.5×20 + 0.0×10 = 4869.0; ÷ 60 = 81.15; rounds to 81",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 97.3,
+     "input": "73 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 97.5,
+     "input": "468 present out of 480 recorded votes; 12 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 0.0,
+     "input": "no member newsletter link on file",
+     "detail": "The hand check recorded no newsletter. That is a zero, not a missing component.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "No personal X account was verified from the nashville.gov page.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 213,
+   "slug": "tonya-hancock",
+   "name": "Tonya Hancock",
+   "seat": "District 9",
+   "score": 80,
+   "raw": 79.78,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "81.3×30 + 67.4×20 + 100.0×10 = 4787.0; ÷ 60 = 79.78; rounds to 80",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 81.3,
+     "input": "61 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 67.4,
+     "input": "321 present out of 476 recorded votes; 155 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/tonya-hancock.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/tonya-hancock"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "No personal X account was verified from the nashville.gov page or newsletter archive.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 278,
+   "slug": "jennifer-frensley-webb",
+   "name": "Jennifer Frensley Webb",
+   "seat": "District 10",
+   "score": 68,
+   "raw": 68.08,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "89.3×30 + 70.3×20 + 0.0×10 = 4085.0; ÷ 60 = 68.08; rounds to 68",
+   "handle": "voteJFW",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 89.3,
+     "input": "67 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 70.3,
+     "input": "336 present out of 478 recorded votes; 142 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 0.0,
+     "input": "no member newsletter link on file",
+     "detail": "The hand check recorded no newsletter. That is a zero, not a missing component.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@voteJFW: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@voteJFW",
+       "url": "https://x.com/voteJFW"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@voteJFW",
+       "url": "https://x.com/voteJFW"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 293,
+   "slug": "jeff-eslick",
+   "name": "Jeff Eslick",
+   "seat": "District 11",
+   "score": 80,
+   "raw": 80.18,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "97.3×30 + 94.6×20 + 0.0×10 = 4811.0; ÷ 60 = 80.18; rounds to 80",
+   "handle": "jeff_eslick",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 97.3,
+     "input": "73 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 94.6,
+     "input": "454 present out of 480 recorded votes; 26 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 0.0,
+     "input": "no member newsletter link on file",
+     "detail": "The hand check recorded no newsletter. That is a zero, not a missing component.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@jeff_eslick: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@jeff_eslick",
+       "url": "https://x.com/jeff_eslick"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@jeff_eslick",
+       "url": "https://x.com/jeff_eslick"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 216,
+   "slug": "erin-evans",
+   "name": "Erin Evans",
+   "seat": "District 12",
+   "score": 94,
+   "raw": 93.57,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "96.0×30 + 86.7×20 + 100.0×10 = 5614.0; ÷ 60 = 93.57; rounds to 94",
+   "handle": "Erinfor12",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 96.0,
+     "input": "72 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 86.7,
+     "input": "416 present out of 480 recorded votes; 64 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/erin-evans.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/erin-evans"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@Erinfor12: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@Erinfor12",
+       "url": "https://x.com/Erinfor12"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@Erinfor12",
+       "url": "https://x.com/Erinfor12"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 217,
+   "slug": "russ-bradford",
+   "name": "Russ Bradford",
+   "seat": "District 13",
+   "score": 91,
+   "raw": 91.38,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "93.3×30 + 84.2×20 + 100.0×10 = 5483.0; ÷ 60 = 91.38; rounds to 91",
+   "handle": "Bradford4D13",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 93.3,
+     "input": "70 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 84.2,
+     "input": "404 present out of 480 recorded votes; 76 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/russ-bradford.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/russ-bradford"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@Bradford4D13: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@Bradford4D13",
+       "url": "https://x.com/Bradford4D13"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@Bradford4D13",
+       "url": "https://x.com/Bradford4D13"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 279,
+   "slug": "jordan-huffman",
+   "name": "Jordan Huffman",
+   "seat": "District 14",
+   "score": 98,
+   "raw": 97.75,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "97.3×30 + 97.3×20 + 100.0×10 = 5865.0; ÷ 60 = 97.75; rounds to 98",
+   "handle": "JordanHuffman",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 97.3,
+     "input": "73 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 97.3,
+     "input": "463 present out of 476 recorded votes; 13 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/jordan-huffman.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/jordan-huffman"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@JordanHuffman: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@JordanHuffman",
+       "url": "https://x.com/JordanHuffman"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@JordanHuffman",
+       "url": "https://x.com/JordanHuffman"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 280,
+   "slug": "jeff-gregg",
+   "name": "Jeff Gregg",
+   "seat": "District 15",
+   "score": 80,
+   "raw": 80.28,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "85.3×30 + 62.9×20 + 100.0×10 = 4817.0; ÷ 60 = 80.28; rounds to 80",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 85.3,
+     "input": "64 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 62.9,
+     "input": "300 present out of 477 recorded votes; 177 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/jeff-gregg.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/jeff-gregg"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "No personal X account was verified from the nashville.gov page or newsletter archive.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 220,
+   "slug": "ginny-welsch",
+   "name": "Ginny Welsch",
+   "seat": "District 16",
+   "score": 91,
+   "raw": 90.95,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "85.3×30 + 94.9×20 + 100.0×10 = 5457.0; ÷ 60 = 90.95; rounds to 91",
+   "handle": "GinnyWelsch",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 85.3,
+     "input": "64 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 94.9,
+     "input": "409 present out of 431 recorded votes; 22 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/ginny-welsch.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/ginny-welsch"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@GinnyWelsch is protected",
+     "detail": "Posts cannot be read, so engagement is left out rather than scored as zero.",
+     "asOf": "2026-11-22T00:00:00Z",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@GinnyWelsch",
+       "url": "https://x.com/GinnyWelsch"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (protected)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": "2026-11-22T00:00:00Z",
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@GinnyWelsch",
+       "url": "https://x.com/GinnyWelsch"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 281,
+   "slug": "terry-vo",
+   "name": "Terry Vo",
+   "seat": "District 17",
+   "score": 92,
+   "raw": 92.48,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "94.7×30 + 85.4×20 + 100.0×10 = 5549.0; ÷ 60 = 92.48; rounds to 92",
+   "handle": "terryvofornash",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 94.7,
+     "input": "71 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 85.4,
+     "input": "409 present out of 479 recorded votes; 70 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/terry-vo.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/terry-vo"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@terryvofornash: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@terryvofornash",
+       "url": "https://x.com/terryvofornash"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@terryvofornash",
+       "url": "https://x.com/terryvofornash"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 222,
+   "slug": "tom-cash",
+   "name": "Tom Cash",
+   "seat": "District 18",
+   "score": 97,
+   "raw": 97.0,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "100.0×30 + 91.0×20 + 100.0×10 = 5820.0; ÷ 60 = 97.00; rounds to 97",
+   "handle": "CashforCouncil",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 100.0,
+     "input": "75 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 91.0,
+     "input": "437 present out of 480 recorded votes; 43 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/tom-cash.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter",
+       "url": "https://www.votetomcash.com/newsletter-1"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@CashforCouncil: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@CashforCouncil",
+       "url": "https://x.com/CashforCouncil"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@CashforCouncil",
+       "url": "https://x.com/CashforCouncil"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 282,
+   "slug": "jacob-kupin",
+   "name": "Jacob Kupin",
+   "seat": "District 19",
+   "score": 96,
+   "raw": 95.78,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "97.3×30 + 91.4×20 + 100.0×10 = 5747.0; ÷ 60 = 95.78; rounds to 96",
+   "handle": "JacobKupin4D19",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 97.3,
+     "input": "73 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 91.4,
+     "input": "395 present out of 432 recorded votes; 37 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/jacob-kupin.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/jacob-kupin"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@JacobKupin4D19: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@JacobKupin4D19",
+       "url": "https://x.com/JacobKupin4D19"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@JacobKupin4D19",
+       "url": "https://x.com/JacobKupin4D19"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 283,
+   "slug": "rollin-horton",
+   "name": "Rollin Horton",
+   "seat": "District 20",
+   "score": 91,
+   "raw": 91.02,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "94.7×30 + 81.0×20 + 100.0×10 = 5461.0; ÷ 60 = 91.02; rounds to 91",
+   "handle": "HortonRollin",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 94.7,
+     "input": "71 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 81.0,
+     "input": "350 present out of 432 recorded votes; 82 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Westside Stories",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/rollin-horton.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Westside Stories",
+       "url": "https://westsidestoriesrh.substack.com/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@HortonRollin: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@HortonRollin",
+       "url": "https://x.com/HortonRollin"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@HortonRollin",
+       "url": "https://x.com/HortonRollin"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 225,
+   "slug": "brandon-taylor",
+   "name": "Brandon Taylor",
+   "seat": "District 21",
+   "score": 85,
+   "raw": 85.35,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "81.3×30 + 84.1×20 + 100.0×10 = 5121.0; ÷ 60 = 85.35; rounds to 85",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 81.3,
+     "input": "61 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 84.1,
+     "input": "361 present out of 429 recorded votes; 68 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/brandon-taylor.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/brandon-taylor"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "No personal X account was verified from the nashville.gov page or newsletter archive.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 284,
+   "slug": "sheri-weiner",
+   "name": "Sheri Weiner",
+   "seat": "District 22",
+   "score": 60,
+   "raw": 60.33,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "80.0×30 + 61.0×20 + 0.0×10 = 3620.0; ÷ 60 = 60.33; rounds to 60",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 80.0,
+     "input": "60 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 61.0,
+     "input": "261 present out of 428 recorded votes; 167 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 0.0,
+     "input": "link on file is the county-wide Metro GovDelivery form, not a member newsletter",
+     "detail": "That URL is excluded by newsletterExcludeUrlPrefixes.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Metro email signup",
+       "url": "https://public.govdelivery.com/accounts/TNNASH/subscriber/new"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "No personal X account was verified. The newsletter archive links a Metro Planning post, not her account.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 227,
+   "slug": "thom-druffel",
+   "name": "Thom Druffel",
+   "seat": "District 23",
+   "score": 88,
+   "raw": 88.03,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "88.0×30 + 82.1×20 + 100.0×10 = 5282.0; ÷ 60 = 88.03; rounds to 88",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 88.0,
+     "input": "66 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 82.1,
+     "input": "394 present out of 480 recorded votes; 86 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Back issues",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/thom-druffel.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Back issues",
+       "url": "https://www.thomdruffel.com/back-issues"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "thomdruffel.com lists no X account.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 285,
+   "slug": "brenda-gadd",
+   "name": "Brenda Gadd",
+   "seat": "District 24",
+   "score": 85,
+   "raw": 85.37,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "88.0×30 + 74.1×20 + 100.0×10 = 5122.0; ÷ 60 = 85.37; rounds to 85",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 88.0,
+     "input": "66 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 74.1,
+     "input": "320 present out of 432 recorded votes; 112 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/brenda-gadd.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/brenda-gadd"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "brendafornashville.com lists no X account. A Bluesky account exists and is not used here.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 286,
+   "slug": "jeff-preptit",
+   "name": "Jeff Preptit",
+   "seat": "District 25",
+   "score": 94,
+   "raw": 94.48,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "97.3×30 + 87.5×20 + 100.0×10 = 5669.0; ÷ 60 = 94.48; rounds to 94",
+   "handle": "JLPreptit",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 97.3,
+     "input": "73 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 87.5,
+     "input": "420 present out of 480 recorded votes; 60 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/jeff-preptit.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/jeff-preptit"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@JLPreptit: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@JLPreptit",
+       "url": "https://x.com/JLPreptit"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@JLPreptit",
+       "url": "https://x.com/JLPreptit"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 230,
+   "slug": "courtney-johnston",
+   "name": "Courtney Johnston",
+   "seat": "District 26",
+   "score": 81,
+   "raw": 80.85,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "81.3×30 + 70.6×20 + 100.0×10 = 4851.0; ÷ 60 = 80.85; rounds to 81",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 81.3,
+     "input": "61 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 70.6,
+     "input": "338 present out of 479 recorded votes; 141 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Updates",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/courtney-johnston.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Updates",
+       "url": "https://district26nashville.com/news-and-updates/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "district26nashville.com lists no X account.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 231,
+   "slug": "bob-nash",
+   "name": "Bob Nash",
+   "seat": "District 27",
+   "score": 81,
+   "raw": 81.22,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "97.3×30 + 97.7×20 + 0.0×10 = 4873.0; ÷ 60 = 81.22; rounds to 81",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 97.3,
+     "input": "73 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 97.7,
+     "input": "468 present out of 479 recorded votes; 11 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 0.0,
+     "input": "no member newsletter link on file",
+     "detail": "The hand check recorded no newsletter. That is a zero, not a missing component.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "No personal X account was verified from the nashville.gov page. He is not the other public figures named Bob Nash.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 287,
+   "slug": "david-benton",
+   "name": "David Benton",
+   "seat": "District 28",
+   "score": 74,
+   "raw": 74.48,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "93.3×30 + 83.5×20 + 0.0×10 = 4469.0; ÷ 60 = 74.48; rounds to 74",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 93.3,
+     "input": "70 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 83.5,
+     "input": "401 present out of 480 recorded votes; 79 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 0.0,
+     "input": "no member newsletter link on file",
+     "detail": "The hand check recorded no newsletter. That is a zero, not a missing component.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "No personal X account was verified from the nashville.gov page.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 294,
+   "slug": "tasha-ellis",
+   "name": "Tasha Ellis",
+   "seat": "District 29",
+   "score": 97,
+   "raw": 97.05,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "97.3×30 + 95.2×20 + 100.0×10 = 5823.0; ÷ 60 = 97.05; rounds to 97",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 97.3,
+     "input": "73 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 95.2,
+     "input": "456 present out of 479 recorded votes; 23 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/tasha-ellis.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/tasha-ellis"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "No personal X account was verified from the nashville.gov page or newsletter archive.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 234,
+   "slug": "sandra-sepulveda",
+   "name": "Sandra Sepulveda",
+   "seat": "District 30",
+   "score": 73,
+   "raw": 72.53,
+   "coverageWeight": 75,
+   "totalWeight": 100,
+   "coverage": 0.75,
+   "arithmetic": "92.0×30 + 84.0×20 + 100.0×10 + 0.0×15 = 5440.0; ÷ 75 = 72.53; rounds to 73",
+   "handle": "SandraForNash",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 92.0,
+     "input": "69 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 84.0,
+     "input": "403 present out of 480 recorded votes; 77 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/sandra-sepulveda.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter",
+       "url": "https://www.sandrafornashville.com/newsletter"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "ok",
+     "points": 0.0,
+     "input": "0 posts in the last 90 days",
+     "detail": "Full credit is 8 posts in 90 days, counting replies and reposts.",
+     "asOf": "2026-11-22T00:00:00Z",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@SandraForNash",
+       "url": "https://x.com/SandraForNash"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "0 of the member's posts with text in the window (need 5)",
+     "detail": "Too little text to score tone. The component is left out, not scored as perfect or as zero.",
+     "asOf": "2026-11-22T00:00:00Z",
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@SandraForNash",
+       "url": "https://x.com/SandraForNash"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 235,
+   "slug": "john-rutherford",
+   "name": "John Rutherford",
+   "seat": "District 31",
+   "score": 76,
+   "raw": 76.45,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "94.7×30 + 87.3×20 + 0.0×10 = 4587.0; ÷ 60 = 76.45; rounds to 76",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 94.7,
+     "input": "71 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 87.3,
+     "input": "419 present out of 480 recorded votes; 61 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 0.0,
+     "input": "no member newsletter link on file",
+     "detail": "The hand check recorded no newsletter. That is a zero, not a missing component.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "No personal X account was verified. He is not the Florida member of Congress who uses a similar name.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 236,
+   "slug": "joy-styles",
+   "name": "Joy Styles",
+   "seat": "District 32",
+   "score": 87,
+   "raw": 86.58,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "89.3×30 + 75.8×20 + 100.0×10 = 5195.0; ÷ 60 = 86.58; rounds to 87",
+   "handle": "Stylesfor32",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 89.3,
+     "input": "67 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 75.8,
+     "input": "363 present out of 479 recorded votes; 116 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/joy-styles.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/joy-styles"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@Stylesfor32: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@Stylesfor32",
+       "url": "https://x.com/Stylesfor32"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@Stylesfor32",
+       "url": "https://x.com/Stylesfor32"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 237,
+   "slug": "antoinette-lee",
+   "name": "Antoinette Lee",
+   "seat": "District 33",
+   "score": 73,
+   "raw": 72.77,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "84.0×30 + 92.3×20 + 0.0×10 = 4366.0; ÷ 60 = 72.77; rounds to 73",
+   "handle": "MrsALee",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 84.0,
+     "input": "63 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 92.3,
+     "input": "441 present out of 478 recorded votes; 37 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 0.0,
+     "input": "no member newsletter link on file",
+     "detail": "The hand check recorded no newsletter. That is a zero, not a missing component.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@MrsALee: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@MrsALee",
+       "url": "https://x.com/MrsALee"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@MrsALee",
+       "url": "https://x.com/MrsALee"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 288,
+   "slug": "sandy-ewing",
+   "name": "Sandy Ewing",
+   "seat": "District 34",
+   "score": 93,
+   "raw": 93.25,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "90.7×30 + 93.7×20 + 100.0×10 = 5595.0; ÷ 60 = 93.25; rounds to 93",
+   "handle": null,
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 90.7,
+     "input": "68 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 93.7,
+     "input": "449 present out of 479 recorded votes; 30 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/sandy-ewing.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/sandy-ewing"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "no verified handle",
+     "detail": "No personal X account was verified from the nashville.gov page or newsletter archive.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (no_handle)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 289,
+   "slug": "jason-spain",
+   "name": "Jason Spain",
+   "seat": "District 35",
+   "score": 92,
+   "raw": 92.15,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "93.3×30 + 86.5×20 + 100.0×10 = 5529.0; ÷ 60 = 92.15; rounds to 92",
+   "handle": "JasonSpainTN",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 93.3,
+     "input": "70 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 86.5,
+     "input": "415 present out of 480 recorded votes; 65 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 100.0,
+     "input": "member newsletter on file: Newsletter archive",
+     "detail": "Presence only. How often it is sent is not in this file. A data/newsletters/jason-spain.json issue list would replace this binary score.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      },
+      {
+       "title": "Newsletter archive",
+       "url": "https://www.nashvillenewsletters.org/member/jason-spain"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@JasonSpainTN: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@JasonSpainTN",
+       "url": "https://x.com/JasonSpainTN"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@JasonSpainTN",
+       "url": "https://x.com/JasonSpainTN"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pid": 238,
+   "slug": "angie-henderson",
+   "name": "Angie Henderson",
+   "seat": "Vice Mayor",
+   "score": 83,
+   "raw": 83.07,
+   "coverageWeight": 60,
+   "totalWeight": 100,
+   "coverage": 0.6,
+   "arithmetic": "100.0×30 + 99.2×20 + 0.0×10 = 4984.0; ÷ 60 = 83.07; rounds to 83",
+   "handle": "angienashville",
+   "components": [
+    {
+     "id": "council_attendance",
+     "name": "Council meeting attendance",
+     "weight": 30,
+     "status": "ok",
+     "points": 100.0,
+     "input": "75 of 75 meetings",
+     "detail": "Present at the opening roll call, or absent then but recorded on a vote later that night.",
+     "asOf": "2026-11-13 15:52 CT",
+     "sources": [
+      {
+       "title": "Metro Legistar roll calls, already compiled in data/members.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "vote_presence",
+     "name": "Vote presence",
+     "weight": 20,
+     "status": "ok",
+     "points": 99.2,
+     "input": "262 present out of 264 recorded votes; 2 marked absent",
+     "detail": "Yes, no, abstain, present-not-voting, and recusal count as present. Absent is the only miss. Not-seated items are ignored.",
+     "asOf": "2026-11-05",
+     "sources": [
+      {
+       "title": "Metro Legistar recorded votes, already compiled in data/votes.json",
+       "url": "https://nashville.legistar.com/"
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Constituent newsletter",
+     "weight": 10,
+     "status": "ok",
+     "points": 0.0,
+     "input": "no member newsletter link on file",
+     "detail": "The hand check recorded no newsletter. That is a zero, not a missing component.",
+     "asOf": "2026-11-22",
+     "sources": [
+      {
+       "title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)",
+       "url": "https://www.nashvillenewsletters.org/"
+      }
+     ]
+    },
+    {
+     "id": "online_engagement",
+     "name": "Online engagement",
+     "weight": 15,
+     "status": "missing",
+     "points": null,
+     "input": "@angienashville: fetchStatus is pending",
+     "detail": "Handle verified. Recent posts have not been loaded into this file yet.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "data/tweets/<slug>.json, one file per member",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@angienashville",
+       "url": "https://x.com/angienashville"
+      }
+     ]
+    },
+    {
+     "id": "decency",
+     "name": "Decency (tone)",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no complete post text (pending)",
+     "detail": "Tone is scored only from a complete post file (fetchStatus ok), using the member's own words.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "The same post files as online engagement, scored with the term list in this config",
+       "url": "https://x.com/"
+      },
+      {
+       "title": "@angienashville",
+       "url": "https://x.com/angienashville"
+      }
+     ]
+    },
+    {
+     "id": "community_meetings",
+     "name": "Community meetings",
+     "weight": 10,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "community_meetings/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/community_meetings/<slug>.json (not populated yet)",
+       "url": "https://www.nashville.gov/departments/council/districts"
+      }
+     ]
+    },
+    {
+     "id": "constituent_replies",
+     "name": "Constituent replies",
+     "weight": 5,
+     "status": "missing",
+     "points": null,
+     "input": "no data file",
+     "detail": "constituent_replies/<slug>.json is not in the repo, so this component is left out.",
+     "asOf": null,
+     "sources": [
+      {
+       "title": "Optional file data/constituent_replies/<slug>.json (not populated yet)",
+       "url": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

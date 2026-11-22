@@ -55,3 +55,20 @@ footer{margin:16px 0 32px}
 .leaflet-tooltip.dlabel:before{display:none}
 .leaflet-container{font:inherit}
 code{background:var(--soft);padding:0 4px;border-radius:4px}
+.sitenav{margin:8px 0 4px}
+.sitenav a{font-weight:700}
+.tile-score{border-color:#c4a15a;background:#fffaf0;border-left:4px solid #a16207}
+.tile-score .n{color:#8a4b08}
+.tile-score .of{font-weight:400;color:var(--muted);font-size:14px;margin-left:4px}
+.tile-h{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.info-btn{flex:0 0 32px;width:32px;height:32px;border-radius:50%;border:1px solid #a16207;background:#fff;color:#8a4b08;font-weight:700;padding:0;line-height:30px}
+.score-panel{border:1px solid #c4a15a;background:#fffaf0;border-radius:10px;padding:12px;margin:0 0 12px}
+.score-panel[hidden]{display:none}
+.score-panel-h{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+.score-panel p{margin:6px 0}
+tr.miss td{color:var(--muted)}
+.posts{list-style:none;padding:0;margin:8px 0}
+.posts li{border-top:1px solid var(--line);padding:8px 0}
+.wbar{display:flex;height:16px;border-radius:8px;overflow:hidden;border:1px solid var(--line);margin:8px 0}
+.wbar span{display:block;height:100%}
+.formula{background:var(--soft);border-radius:8px;padding:8px 10px;overflow-wrap:anywhere}

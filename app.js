@@ -1,5 +1,11 @@
 (async function(){
-const [V, M, G] = await Promise.all(['data/votes.json','data/members.json','data/districts.geojson'].map(u=>fetch(u).then(r=>r.json())));
+const [V, M, G, S, TW] = await Promise.all([
+  fetch('data/votes.json').then(r=>r.json()),
+  fetch('data/members.json').then(r=>r.json()),
+  fetch('data/districts.geojson').then(r=>r.json()),
+  fetch('data/scores.json').then(r=>r.ok?r.json():null).catch(()=>null),
+  fetch('data/tweets/index.json').then(r=>r.ok?r.json():null).catch(()=>null),
+]);
 const LABEL={Y:'Yes',N:'No',A:'Abstain',X:'Absent',P:'Present, not voting',R:'Recused',O:'Other','-':'Not seated'};
 const VCOL={Y:'#2e7d32',N:'#c62828',A:'#f9a825',X:'#9e9e9e',P:'#b0bec5',R:'#7e57c2',O:'#b0bec5','-':'#eceff1'};
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -18,6 +24,9 @@ function stats(pid){const i=pidIdx[pid]; if(i===undefined) return null;
   return s;}
 const seatName=m=>m.vm?'Vice Mayor':(m.district?`District ${m.district}`:`At-large${m.seatNo?' seat '+m.seatNo:''}`);
 const colorOf=m=>m.district?DCOL[m.district]:(m.vm?'#37474f':'#8d6e63');
+const scoreByPid={}; (S&&S.members||[]).forEach(r=>scoreByPid[r.pid]=r);
+const tweetsByPid=(TW&&TW.byPid)||{};
+const scoreText=m=>{const r=scoreByPid[m.pid]; return r&&r.score!=null?String(r.score):'n/a';};
 
 // ---------- map ----------
 const map=L.map('map',{zoomControl:true,scrollWheelZoom:true}).setView([36.17,-86.78],10);
@@ -53,18 +62,87 @@ legendList.addEventListener('keydown',e=>{if(e.key==='Enter'){const el=e.target.
 
 // ---------- member cards ----------
 const order=[...M.members].sort((a,b)=>(a.vm?-2:a.district?a.district:-1)-(b.vm?-2:b.district?b.district:-1)||(a.seatNo||0)-(b.seatNo||0));
-document.getElementById('cards').innerHTML=order.map(m=>`<button class="mc" data-pid="${m.pid}"><span class="bar" style="background:${colorOf(m)}"></span><img src="${esc(m.photo||'')}" alt="" loading="lazy"><span><b style="margin:0">${esc(m.name)}</b><br><span class="muted">${seatName(m)}</span></span></button>`).join('');
+document.getElementById('cards').innerHTML=order.map(m=>`<button class="mc" data-pid="${m.pid}"><span class="bar" style="background:${colorOf(m)}"></span><img src="${esc(m.photo||'')}" alt="" loading="lazy"><span><b style="margin:0">${esc(m.name)}</b><br><span class="muted">${seatName(m)}</span><br><span class="muted">Score ${scoreText(m)}</span></span></button>`).join('');
 document.getElementById('cards').addEventListener('click',e=>{const b=e.target.closest('.mc'); if(!b) return; const m=byPid[b.dataset.pid]; selDistrict=m.district||null; restyle(); openProfile(m);});
 
 // ---------- profile ----------
 const drawer=document.getElementById('drawer');
 document.getElementById('closeDrawer').onclick=closeProfile;
 drawer.addEventListener('click',e=>{if(e.target===drawer) closeProfile();});
-document.addEventListener('keydown',e=>{if(e.key==='Escape') closeProfile();});
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Escape') return;
+  const panel=document.getElementById('scorePanel');
+  if(panel && !panel.hidden && panel.dataset.pinned==='1'){panel.hidden=true; panel.dataset.pinned='0'; const b=document.getElementById('scoreInfo'); if(b) b.setAttribute('aria-expanded','false'); return;}
+  closeProfile();
+});
 function closeProfile(){drawer.hidden=true; if(location.hash) history.replaceState(null,'',location.pathname+location.search);}
+function postMetrics(p){
+  const bits=[];
+  if(p.replyCount!=null) bits.push(`${p.replyCount} replies`);
+  if(p.repostCount!=null) bits.push(`${p.repostCount} reposts`);
+  if(p.likeCount!=null) bits.push(`${p.likeCount} likes`);
+  if(p.quoteCount!=null) bits.push(`${p.quoteCount} quotes`);
+  return bits.length?bits.join(' · '):'Engagement counts not in the file';
+}
+function scorePanelHtml(r){
+  if(!r) return '';
+  const rows=r.components.map(c=>{
+    const used=c.status==='ok'&&c.points!=null;
+    return `<tr class="${used?'':'miss'}"><td>${esc(c.name)}</td><td>${c.weight}</td><td>${esc(c.input||'')}${c.detail?`<div class="muted">${esc(c.detail)}</div>`:''}</td><td>${used?Number(c.points).toFixed(1):'—'}</td><td>${used?'In the score':'Left out'}</td></tr>`;
+  }).join('');
+  const seen=new Set();
+  const links=[];
+  r.components.forEach(c=>(c.sources||[]).forEach(src=>{
+    if(!src||!src.url||seen.has(src.url)) return;
+    seen.add(src.url);
+    links.push(`<li><a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.title||src.url)}</a>${c.asOf?` <span class="muted">as of ${esc(c.asOf)}</span>`:''}</li>`);
+  }));
+  const cov=Math.round(r.coverage*100);
+  return `<div class="score-panel" id="scorePanel" hidden>
+    <div class="score-panel-h"><b>How this score was calculated</b><button type="button" id="scoreClose">Close</button></div>
+    <p>${r.score==null?'Insufficient data: no component had a number, so there is no score.':`<b>${r.score}</b> out of 100.`} ${cov}% of the formula has data (${r.coverageWeight} of ${r.totalWeight} weight points). Components without data are left out and the rest are rescaled. They are not treated as zero.</p>
+    <p class="formula">${esc(r.arithmetic||'')}</p>
+    <div class="scroll"><table><thead><tr><th>Component</th><th>Weight</th><th>Input</th><th>Points</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>
+    ${links.length?`<ul class="plain">${links.join('')}</ul>`:''}
+    <p><a href="score/">Full method, formulas, and changelog</a></p>
+  </div>`;
+}
+function postsHtml(m){
+  const t=tweetsByPid[m.pid]||tweetsByPid[String(m.pid)];
+  if(!t) return '';
+  if(!t.handle){
+    const note=(t.handleCheck&&t.handleCheck.note)||'No verified public X account is on file.';
+    return `<h3 style="margin-top:16px">Recent posts on X</h3><p class="muted">${esc(note)}</p>`;
+  }
+  const posts=(t.posts||[]).slice().sort((a,b)=>String(b.createdAt||'').localeCompare(String(a.createdAt||''))).slice(0,5);
+  const list=posts.map(p=>`<li><div><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc((p.createdAt||'').slice(0,10)||'Post')}</a>${p.isReply?' <span class="muted">reply</span>':''}${p.isRetweet?' <span class="muted">repost</span>':''}</div><div>${esc(p.text||'')}</div><div class="muted">${esc(postMetrics(p))}</div></li>`).join('');
+  return `<h3 style="margin-top:16px">Recent posts on X</h3>
+    <p><a href="${esc(t.profileUrl)}" target="_blank" rel="noopener">@${esc(t.handle)}</a>${t.profileName?` <span class="muted">${esc(t.profileName)}</span>`:''}${t.protected?' <span class="muted">Protected</span>':''}</p>
+    ${list?`<ul class="posts">${list}</ul>`:''}
+    <p class="muted">${esc(t.fetchNote||'')}</p>`;
+}
+function wireScore(startOpen){
+  const btn=document.getElementById('scoreInfo'), panel=document.getElementById('scorePanel');
+  if(!btn||!panel) return;
+  const tile=btn.closest('.tile-score');
+  let pinned=false, tileOver=false, panelOver=false;
+  const set=on=>{panel.hidden=!on; btn.setAttribute('aria-expanded',String(on)); panel.dataset.pinned=pinned?'1':'0';};
+  const hideIfNeeded=()=>{if(!pinned && !tileOver && !panelOver) set(false);};
+  btn.addEventListener('click',e=>{e.stopPropagation(); pinned=!pinned; set(pinned);});
+  tile.addEventListener('mouseenter',()=>{tileOver=true; if(!pinned) set(true);});
+  tile.addEventListener('mouseleave',()=>{tileOver=false; setTimeout(hideIfNeeded,300);});
+  panel.addEventListener('mouseenter',()=>{panelOver=true; if(!pinned) set(true);});
+  panel.addEventListener('mouseleave',()=>{panelOver=false; setTimeout(hideIfNeeded,300);});
+  btn.addEventListener('focus',()=>{if(!pinned) set(true);});
+  btn.addEventListener('blur',()=>{setTimeout(hideIfNeeded,300);});
+  const closer=document.getElementById('scoreClose');
+  if(closer) closer.addEventListener('click',e=>{e.stopPropagation(); pinned=false; tileOver=false; set(false);});
+  if(startOpen){pinned=true; set(true);}
+}
 function openProfile(m){
-  const s=stats(m.pid), a=m.attendance, i=pidIdx[m.pid];
+  const s=stats(m.pid), a=m.attendance, i=pidIdx[m.pid], sc=scoreByPid[m.pid];
   const p=document.getElementById('profile');
+  const scoreTile=sc?`<div class="tile tile-score"><div class="tile-h"><span class="muted">Dolly Servitude score</span><button type="button" class="info-btn" id="scoreInfo" aria-expanded="false" aria-controls="scorePanel" aria-label="How this score was calculated">i</button></div><div class="n">${sc.score==null?'Insufficient data':`${sc.score}<span class="of">/ 100</span>`}</div><div class="muted">${Math.round(sc.coverage*100)}% of the formula has data</div></div>`:`<div class="tile tile-score"><div class="muted">Dolly Servitude score</div><div class="n">Unavailable</div></div>`;
   p.innerHTML=`<div class="ph"><img src="${esc(m.photo||'')}" alt="Official photo of ${esc(m.name)}">
   <div class="info"><h2 id="pName">${esc(m.name)}</h2><div>${seatName(m)}${m.area?' · '+esc(m.area):''}</div>
   <div class="seatbar" style="background:${colorOf(m)}"></div>
@@ -75,14 +153,18 @@ function openProfile(m){
    <div class="tile"><div class="muted">Yes / No / Abstain</div><div class="n">${s.Y} / ${s.N} / ${s.A}</div></div>
    <div class="tile"><div class="muted">Absent for votes</div><div class="n">${s.X}</div></div>
    <div class="tile"><div class="muted">With the majority</div><div class="n">${pct(s.withMaj,s.cast)}</div></div>`:''}
+   ${scoreTile}
   </div>
+  ${scorePanelHtml(sc)}
   <h3>Contact</h3>
   <dl><dt>Email</dt><dd><a href="mailto:${esc(m.email)}">${esc(m.email)}</a></dd>
   ${m.phone?`<dt>Phone</dt><dd><a href="tel:${esc(m.phone.replace(/[^0-9]/g,''))}">${esc(m.phone)}</a></dd>`:''}
   <dt>Office</dt><dd>${esc(m.office)}</dd>
   <dt>Official page</dt><dd><a href="${esc(m.page)}" target="_blank" rel="noopener">nashville.gov profile</a></dd>
-  <dt>Newsletter</dt><dd>${m.newsletter?`<a href="${esc(m.newsletter.url)}" target="_blank" rel="noopener">${esc(m.newsletter.label)}</a>`:'<span class="muted">None found</span>'}</dd></dl>
+  <dt>Newsletter</dt><dd>${m.newsletter?`<a href="${esc(m.newsletter.url)}" target="_blank" rel="noopener">${esc(m.newsletter.label)}</a>`:'<span class="muted">None found</span>'}</dd>
+  ${(()=>{const t=tweetsByPid[m.pid]||tweetsByPid[String(m.pid)]; return t&&t.handle?`<dt>X</dt><dd><a href="${esc(t.profileUrl)}" target="_blank" rel="noopener">@${esc(t.handle)}</a></dd>`:'';})()}</dl>
   ${m.committees&&m.committees.length?`<h3>Committees</h3><div class="muted">As listed on their nashville.gov page, which may lag current assignments.</div><ul class="plain">${m.committees.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>`:''}
+  ${postsHtml(m)}
   ${a&&a.missed.length?`<h3 style="margin-top:12px">Meetings missed</h3><div>${a.missed.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${x.date}</a>`).join(', ')}</div>`:''}
   ${i!==undefined?`<h3 style="margin-top:16px">How ${esc(m.name.split(' ')[0])} voted</h3>
   <div class="row"><input type="search" id="mq" placeholder="Search bill number, title or keyword">
@@ -93,7 +175,9 @@ function openProfile(m){
   <div class="muted" id="mcount"></div>
   <div class="scroll" style="max-height:none"><table><thead><tr><th>Date</th><th>Legislation</th><th>Their vote</th><th>Outcome</th></tr></thead><tbody id="mbody"></tbody></table></div>`:'<div class="muted" style="margin-top:12px">No recorded votes for this member in the data.</div>'}`;
   drawer.hidden=false; drawer.querySelector('.drawer-inner').scrollTop=0;
+  const startOpen=new URLSearchParams(location.search).get('score')==='open';
   history.replaceState(null,'',`#${m.district?'d'+m.district:'p'+m.pid}`);
+  wireScore(startOpen);
   if(i===undefined) return;
   const rows=V.items.filter(it=>it.v[i]!=='-').slice().reverse();
   let div=false,min=false; const q=document.getElementById('mq'),mv=document.getElementById('mv'),mo=document.getElementById('mo'),my=document.getElementById('my'),tb=document.getElementById('mbody');
@@ -110,14 +194,14 @@ function openProfile(m){
 }
 
 // ---------- at a glance table ----------
-const glance=M.members.map(m=>{const s=stats(m.pid)||{n:0,N:0,withMaj:0,cast:0}; const a=m.attendance||{attended:0,total:0};
-  return {m,name:m.name,seat:m.vm?'VM':(m.district?`D${m.district}`:'At-large'),sk:m.vm?0:(m.district||0.5),att:a.attended,tot:a.total,attp:a.total?a.attended/a.total:0,n:s.n,N:s.N,maj:s.cast?s.withMaj/s.cast:0,majTxt:pct(s.withMaj,s.cast)};});
+const glance=M.members.map(m=>{const s=stats(m.pid)||{n:0,N:0,withMaj:0,cast:0}; const a=m.attendance||{attended:0,total:0}; const sc=scoreByPid[m.pid];
+  return {m,name:m.name,seat:m.vm?'VM':(m.district?`D${m.district}`:'At-large'),sk:m.vm?0:(m.district||0.5),att:a.attended,tot:a.total,attp:a.total?a.attended/a.total:0,n:s.n,N:s.N,maj:s.cast?s.withMaj/s.cast:0,majTxt:pct(s.withMaj,s.cast),score:sc&&sc.score!=null?sc.score:-1,cov:sc?sc.coverage:0,scoreTxt:sc&&sc.score!=null?String(sc.score):'—',covTxt:sc?Math.round(sc.coverage*100)+'%':'—'};});
 let sortK='seat',sortDir=1;
 function drawGlance(){const r=glance.slice().sort((a,b)=>{const k=sortK==='seat'?'sk':sortK; return (a[k]>b[k]?1:a[k]<b[k]?-1:0)*sortDir;});
-  document.querySelector('#stats tbody').innerHTML=r.map(x=>`<tr data-pid="${x.m.pid}" style="cursor:pointer"><td>${esc(x.name)}</td><td>${x.seat}</td><td>${x.att} of ${x.tot}</td><td>${pct(x.att,x.tot)}</td><td>${x.n.toLocaleString()}</td><td>${x.N}</td><td>${x.majTxt}</td></tr>`).join('');}
+  document.querySelector('#stats tbody').innerHTML=r.map(x=>`<tr data-pid="${x.m.pid}" style="cursor:pointer"><td>${esc(x.name)}</td><td>${x.seat}</td><td>${x.att} of ${x.tot}</td><td>${pct(x.att,x.tot)}</td><td>${x.n.toLocaleString()}</td><td>${x.N}</td><td>${x.majTxt}</td><td>${x.scoreTxt}</td><td>${x.covTxt}</td></tr>`).join('');}
 document.querySelectorAll('#stats th').forEach(th=>th.onclick=()=>{const k=th.dataset.k; sortDir=sortK===k?-sortDir:(k==='name'||k==='seat'?1:-1); sortK=k; drawGlance();});
 document.querySelector('#stats tbody').addEventListener('click',e=>{const tr=e.target.closest('tr'); if(tr){const m=byPid[tr.dataset.pid]; selDistrict=m.district||null; restyle(); openProfile(m);}});
-document.getElementById('glanceNote').textContent=`Attendance counts full council meetings since ${V.attendance.first}. Click a column to sort, or a row to open the profile. See the method notes below.`;
+document.getElementById('glanceNote').textContent=`Attendance counts full council meetings since ${V.attendance.first}. Dolly Servitude is the 0–100 score; coverage is the share of the formula that had data for that member. Click a column to sort, or a row to open the profile.`;
 drawGlance();
 
 // ---------- items explorer (secondary) ----------

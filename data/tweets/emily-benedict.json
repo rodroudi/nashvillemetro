@@ -1,0 +1,21 @@
+{
+ "pid": 211,
+ "slug": "emily-benedict",
+ "name": "Emily Benedict",
+ "handle": null,
+ "profileUrl": null,
+ "profileName": null,
+ "protected": false,
+ "bio": "",
+ "handleSource": null,
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "not_found",
+  "note": "A 2020 WTVF article quoted @emilyfor7. That profile did not resolve to a public account on this date, so it is not listed."
+ },
+ "fetchedAt": null,
+ "fetchStatus": "no_handle",
+ "fetchNote": "No verified handle, so there are no posts to load.",
+ "truncated": false,
+ "posts": []
+}

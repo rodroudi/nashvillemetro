@@ -1,0 +1,25 @@
+{
+ "pid": 279,
+ "slug": "jordan-huffman",
+ "name": "Jordan Huffman",
+ "handle": "JordanHuffman",
+ "profileUrl": "https://x.com/JordanHuffman",
+ "profileName": "Councilman Jordan Huffman",
+ "protected": false,
+ "bio": "Nashville Metro Council Member (D14).",
+ "handleSource": {
+  "title": "Jordan Huffman newsletter archive",
+  "url": "https://www.nashvillenewsletters.org/member/jordan-huffman",
+  "checked": "2026-11-22",
+  "note": "The archive links twitter.com/jordanhuffman. The bio says Nashville Metro Council Member (D14)."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

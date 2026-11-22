@@ -1,0 +1,21 @@
+{
+ "pid": 204,
+ "slug": "zulfat-suara",
+ "name": "Zulfat Suara",
+ "handle": null,
+ "profileUrl": null,
+ "profileName": null,
+ "protected": false,
+ "bio": "",
+ "handleSource": null,
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "not_found",
+  "note": "A social icon in the Nashville Newsletters archive links twitter.com/zulfatsuara. That profile returned not found on this date. The nashville.gov page does not list a personal X account."
+ },
+ "fetchedAt": null,
+ "fetchStatus": "no_handle",
+ "fetchNote": "No verified handle, so there are no posts to load.",
+ "truncated": false,
+ "posts": []
+}

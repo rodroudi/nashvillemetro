@@ -1,0 +1,25 @@
+{
+ "pid": 278,
+ "slug": "jennifer-frensley-webb",
+ "name": "Jennifer Frensley Webb",
+ "handle": "voteJFW",
+ "profileUrl": "https://x.com/voteJFW",
+ "profileName": "Jennifer Frensley Webb",
+ "protected": false,
+ "bio": "",
+ "handleSource": {
+  "title": "Ballotpedia page for Jennifer Frensley Webb",
+  "url": "https://ballotpedia.org/Jennifer_Frensley_Webb",
+  "checked": "2026-11-22",
+  "note": "Ballotpedia links https://x.com/voteJFW. The profile name is Jennifer Frensley Webb."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

@@ -1,0 +1,25 @@
+{
+ "pid": 238,
+ "slug": "angie-henderson",
+ "name": "Angie Henderson",
+ "handle": "angienashville",
+ "profileUrl": "https://x.com/angienashville",
+ "profileName": "Angie E. Henderson",
+ "protected": false,
+ "bio": "Vice Mayor of Nashville. President of #MetroCouncilNash. Not a govt/official acct.",
+ "handleSource": {
+  "title": "Ballotpedia page for Angie Henderson",
+  "url": "https://ballotpedia.org/Angie_Henderson",
+  "checked": "2026-11-22",
+  "note": "Ballotpedia links https://x.com/angienashville. Her bio says Vice Mayor and also says the account is not an official government account."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

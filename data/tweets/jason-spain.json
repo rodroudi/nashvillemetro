@@ -1,0 +1,25 @@
+{
+ "pid": 289,
+ "slug": "jason-spain",
+ "name": "Jason Spain",
+ "handle": "JasonSpainTN",
+ "profileUrl": "https://x.com/JasonSpainTN",
+ "profileName": "Jason Spain",
+ "protected": false,
+ "bio": "Nashville Metro Council Member, District 35. Executive Director, Tennessee Public Transportation Association.",
+ "handleSource": {
+  "title": "Jason Spain newsletter archive",
+  "url": "https://www.nashvillenewsletters.org/member/jason-spain",
+  "checked": "2026-11-22",
+  "note": "The archive links twitter.com/JasonSpainTN. The bio says Nashville Metro Council Member, District 35."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}
