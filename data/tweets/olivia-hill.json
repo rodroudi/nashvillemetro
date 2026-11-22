@@ -1,0 +1,25 @@
+{
+ "pid": 291,
+ "slug": "olivia-hill",
+ "name": "Olivia Hill",
+ "handle": "Oliviafornash",
+ "profileUrl": "https://x.com/Oliviafornash",
+ "profileName": "Olivia Hill",
+ "protected": false,
+ "bio": "Metro Council At-Large | Metro Council Member at-Large, Navy Vet.",
+ "handleSource": {
+  "title": "voteoliviahill.com",
+  "url": "https://voteoliviahill.com/",
+  "checked": "2026-11-22",
+  "note": "The campaign site links https://x.com/Oliviafornash. The profile bio says Metro Council at-large."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

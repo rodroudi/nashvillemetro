@@ -1,0 +1,125 @@
+{
+  "version": "1.0.0",
+  "name": "Dolly Servitude score",
+  "scale": {"min": 0, "max": 100},
+  "checked": "2026-11-22",
+  "updateCadence": "A GitHub Action recomputes this score every Monday at 12:00 UTC, and any time someone runs the workflow by hand. The job does not browse the web. It rereads the data files in this repo and republishes data/scores.json when the result changes. Vote and attendance files are refreshed with the existing scripts (scripts/refresh_data.py, scripts/refresh_attendance.py, scripts/build_data.py). Post files are filled in under data/tweets/. The score moves when those inputs move.",
+  "missingData": "If a component has no usable data for a member, that component is left out for that member. It is not scored as zero. The member's score is the weighted average of the components that do have data, so those weights are scaled to 0–100. Coverage is the share of all weight that had data. The same rule applies to every member. A filed record that is genuinely empty (for example a post file whose fetchStatus is ok and whose post list is empty, or a newsletter check that found no link) is data, and it scores zero for that component. A missing file is not data.",
+  "rounding": "Each component's points are rounded to one decimal, half up, before weighting. The weighted average is then rounded to an integer, half up. The tile shows that integer.",
+  "parameters": {
+    "onlineLookbackDays": 90,
+    "onlineFullCreditPosts": 8,
+    "decencyMinPosts": 5,
+    "shoutingMinLetters": 40,
+    "shoutingCapsRatio": 0.7,
+    "newsletterLookbackDays": 365,
+    "newsletterFullCredit": 6,
+    "communityLookbackDays": 365,
+    "communityFullCredit": 6,
+    "repliesLookbackDays": 365,
+    "repliesFullCredit": 12,
+    "newsletterExcludeUrlPrefixes": ["https://public.govdelivery.com/"]
+  },
+  "components": [
+    {
+      "id": "council_attendance",
+      "name": "Council meeting attendance",
+      "weight": 30,
+      "group": "Serving",
+      "plain": "The share of full Metro Council meetings the member attended while they held the seat. Showing up is the baseline of the job.",
+      "formula": "points = 100 × meetings attended ÷ meetings while seated",
+      "missingWhen": "The member has no meetings in the attendance file (attended and total are both zero or the block is absent).",
+      "sources": [
+        {"title": "Metro Legistar roll calls, already compiled in data/members.json", "url": "https://nashville.legistar.com/"}
+      ]
+    },
+    {
+      "id": "vote_presence",
+      "name": "Vote presence",
+      "weight": 20,
+      "group": "Serving",
+      "plain": "Of the recorded roll-call votes cast while the member was seated, the share where they were not marked absent. A yes, no, abstain, present-not-voting, or recusal counts as being there. This is not a score for voting yes, and it is not 'with the majority.' The Vice Mayor usually records present-not-voting; that still counts as present.",
+      "formula": "points = 100 × (recorded votes − votes marked absent) ÷ recorded votes",
+      "missingWhen": "The member has no recorded votes in data/votes.json.",
+      "sources": [
+        {"title": "Metro Legistar recorded votes, already compiled in data/votes.json", "url": "https://nashville.legistar.com/"}
+      ]
+    },
+    {
+      "id": "newsletter",
+      "name": "Constituent newsletter",
+      "weight": 10,
+      "group": "Serving",
+      "plain": "Whether the member keeps a public newsletter or signup that is theirs. This measures presence, not how often they write, until an issue list is filed. The county-wide Metro GovDelivery form is not a member newsletter and scores 0.",
+      "formula": "Without data/newsletters/<slug>.json: points = 100 if a member-specific newsletter URL is on file, else 0. With that file: points = the smaller of 100 and 100 × issues in the last newsletterLookbackDays ÷ newsletterFullCredit.",
+      "missingWhen": "This component is scored for everyone from the hand-checked newsletter field. It is missing only if that field cannot be read.",
+      "sources": [
+        {"title": "Newsletter links checked by hand for this site (see scripts/members_seed.py)", "url": "https://www.nashvillenewsletters.org/"}
+      ]
+    },
+    {
+      "id": "online_engagement",
+      "name": "Online engagement",
+      "weight": 15,
+      "group": "Serving",
+      "plain": "Recent public posts on the member's verified X account. Replies and reposts count. Eight posts in the lookback window is full credit. More posts do not raise the points past 100. Liking other people's posts is not counted, because this repo does not collect likes given.",
+      "formula": "points = the smaller of 100 and 100 × posts in the last onlineLookbackDays ÷ onlineFullCreditPosts",
+      "missingWhen": "No verified handle, the account is protected, the post file is pending or only a partial sample, or the timeline was cut off inside the window before the count reached full credit.",
+      "sources": [
+        {"title": "data/tweets/<slug>.json, one file per member", "url": "https://x.com/"}
+      ]
+    },
+    {
+      "id": "decency",
+      "name": "Decency (tone)",
+      "weight": 10,
+      "group": "Decency",
+      "plain": "Of the member's own recent posts with text, the share that this repo's fixed word list and shouting rule do not flag. Reposts are skipped because the words are not theirs. The list is short on purpose: insults and profanity, not criticism of a policy, a party, or a vote. It misses sarcasm, coded language, and anything not in the list. It is a reproducible screen, not a verdict on the person.",
+      "formula": "points = 100 × posts with no incivility flag ÷ posts scored. A post is flagged when a token matches the term list, or when it has at least shoutingMinLetters letters and at least shoutingCapsRatio of those letters are uppercase.",
+      "missingWhen": "Posts are not in a complete file, or fewer than decencyMinPosts of the member's own posts with text fall in the lookback window.",
+      "sources": [
+        {"title": "The same post files as online engagement, scored with the term list in this config", "url": "https://x.com/"}
+      ]
+    },
+    {
+      "id": "community_meetings",
+      "name": "Community meetings",
+      "weight": 10,
+      "group": "Serving",
+      "plain": "Meetings with constituents in the district or the city, outside the full council agenda: neighborhood meetings, office hours, cleanups the member attended. District pages on nashville.gov list some upcoming events, but they do not record whether the member attended, so those calendars are not used as a score.",
+      "formula": "points = the smaller of 100 and 100 × meetings marked attended in the last communityLookbackDays ÷ communityFullCredit",
+      "missingWhen": "data/community_meetings/<slug>.json does not exist. An existing file with an empty meetings list scores 0.",
+      "sources": [
+        {"title": "Optional file data/community_meetings/<slug>.json (not populated yet)", "url": "https://www.nashville.gov/departments/council/districts"}
+      ]
+    },
+    {
+      "id": "constituent_replies",
+      "name": "Constituent replies",
+      "weight": 5,
+      "group": "Serving",
+      "plain": "Recorded answers to constituent questions, by email, phone, or a public reply that is filed as one. A reply count on an X post is not treated as an answer to a constituent, because the data does not say who was being answered.",
+      "formula": "points = the smaller of 100 and 100 × replies in the last repliesLookbackDays ÷ repliesFullCredit",
+      "missingWhen": "data/constituent_replies/<slug>.json does not exist. An existing file with an empty replies list scores 0.",
+      "sources": [
+        {"title": "Optional file data/constituent_replies/<slug>.json (not populated yet)", "url": ""}
+      ]
+    }
+  ],
+  "civilityTerms": [
+    "fuck", "fucking", "fucked", "motherfucker",
+    "shit", "shitty", "bullshit",
+    "asshole", "bastard", "bitch", "dickhead", "dumbass", "jackass",
+    "idiot", "idiots", "idiotic", "moron", "morons", "stupid", "stupidity",
+    "loser", "losers", "pathetic", "scumbag", "scum",
+    "retard", "retarded",
+    "nigger", "niggers", "faggot", "faggots", "kike", "spic", "chink"
+  ],
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-11-22",
+      "notes": "First public formula. Council attendance, vote presence, and newsletter presence are scored from the files this site already publishes. Online engagement and decency run only when a member's post file is a complete lookback (fetchStatus ok). Community meetings and constituent replies are in the formula and stay out of the number until their files exist. Missing components are dropped and the rest are rescaled. One verified post is stored for Sean Parker as a format example; that file is marked partial and is not scored."
+    }
+  ]
+}

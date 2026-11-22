@@ -1,0 +1,21 @@
+{
+ "pid": 285,
+ "slug": "brenda-gadd",
+ "name": "Brenda Gadd",
+ "handle": null,
+ "profileUrl": null,
+ "profileName": null,
+ "protected": false,
+ "bio": "",
+ "handleSource": null,
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "not_found",
+  "note": "brendafornashville.com lists no X account. A Bluesky account exists and is not used here."
+ },
+ "fetchedAt": null,
+ "fetchStatus": "no_handle",
+ "fetchNote": "No verified handle, so there are no posts to load.",
+ "truncated": false,
+ "posts": []
+}

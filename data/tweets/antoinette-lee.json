@@ -1,0 +1,25 @@
+{
+ "pid": 237,
+ "slug": "antoinette-lee",
+ "name": "Antoinette Lee",
+ "handle": "MrsALee",
+ "profileUrl": "https://x.com/MrsALee",
+ "profileName": "Antoinette Lee",
+ "protected": false,
+ "bio": "I'm active in TN state politics, and I advocate for public school education and public education employees.",
+ "handleSource": {
+  "title": "Ballotpedia page for Antoinette Lee",
+  "url": "https://ballotpedia.org/Antoinette_Lee",
+  "checked": "2026-11-22",
+  "note": "Ballotpedia links https://x.com/MrsALee. The profile name is Antoinette Lee. The bio does not itself say Metro Council."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

@@ -1,0 +1,39 @@
+{
+ "pid": 209,
+ "slug": "sean-parker",
+ "name": "Sean Parker",
+ "handle": "SeanForFive",
+ "profileUrl": "https://x.com/SeanForFive",
+ "profileName": "Sean Parker is FOR Transit",
+ "protected": false,
+ "bio": "Councilmember for Nashville's 5th District. Housing, safe streets, and effective services.",
+ "handleSource": {
+  "title": "seanforfive.com",
+  "url": "https://seanforfive.com/",
+  "checked": "2026-11-22",
+  "note": "The campaign site and the newsletter archive both link @SeanForFive. The profile bio names District 5."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": "2026-11-22T18:40:00Z",
+ "fetchStatus": "partial",
+ "fetchNote": "One public post was verified by its status URL on the syndication payload. replyCount is that payload's conversation_count (24) and likeCount is favorite_count (16). Repost and quote counts were not in the payload and are null. The file is not a full lookback, so online engagement and decency are not scored from it.",
+ "truncated": false,
+ "posts": [
+  {
+   "id": "2124211124061045000",
+   "url": "https://x.com/SeanForFive/status/2124211124061045000",
+   "text": "@Steve_sjfsongs Why don’t you ask grok you bluechecked dork",
+   "createdAt": "2026-11-21T18:39:32.000Z",
+   "replyCount": 24,
+   "repostCount": null,
+   "likeCount": 16,
+   "quoteCount": null,
+   "isReply": true,
+   "isRetweet": false,
+   "lang": "en"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "pid": 288,
+ "slug": "sandy-ewing",
+ "name": "Sandy Ewing",
+ "handle": null,
+ "profileUrl": null,
+ "profileName": null,
+ "protected": false,
+ "bio": "",
+ "handleSource": null,
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "not_found",
+  "note": "No personal X account was verified from the nashville.gov page or newsletter archive."
+ },
+ "fetchedAt": null,
+ "fetchStatus": "no_handle",
+ "fetchNote": "No verified handle, so there are no posts to load.",
+ "truncated": false,
+ "posts": []
+}

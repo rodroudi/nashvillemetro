@@ -1,0 +1,25 @@
+{
+ "pid": 207,
+ "slug": "jennifer-gamble",
+ "name": "Jennifer Gamble",
+ "handle": "JGamble4Council",
+ "profileUrl": "https://x.com/JGamble4Council",
+ "profileName": "Jennifer Gamble",
+ "protected": false,
+ "bio": "Lifelong Moderate Democrat",
+ "handleSource": {
+  "title": "Jennifer Gamble newsletter archive",
+  "url": "https://www.nashvillenewsletters.org/member/jennifer-gamble",
+  "checked": "2026-11-22",
+  "note": "The archive repeats a social link to twitter.com/JGamble4Council. The profile name is Jennifer Gamble."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

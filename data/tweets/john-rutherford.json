@@ -1,0 +1,21 @@
+{
+ "pid": 235,
+ "slug": "john-rutherford",
+ "name": "John Rutherford",
+ "handle": null,
+ "profileUrl": null,
+ "profileName": null,
+ "protected": false,
+ "bio": "",
+ "handleSource": null,
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "not_found",
+  "note": "No personal X account was verified. He is not the Florida member of Congress who uses a similar name."
+ },
+ "fetchedAt": null,
+ "fetchStatus": "no_handle",
+ "fetchNote": "No verified handle, so there are no posts to load.",
+ "truncated": false,
+ "posts": []
+}

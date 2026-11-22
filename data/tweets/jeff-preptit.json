@@ -1,0 +1,25 @@
+{
+ "pid": 286,
+ "slug": "jeff-preptit",
+ "name": "Jeff Preptit",
+ "handle": "JLPreptit",
+ "profileUrl": "https://x.com/JLPreptit",
+ "profileName": "Jeff L Preptit, Esq.",
+ "protected": false,
+ "bio": "Civil Rights Attorney",
+ "handleSource": {
+  "title": "Jeff Preptit newsletter archive",
+  "url": "https://www.nashvillenewsletters.org/member/jeff-preptit",
+  "checked": "2026-11-22",
+  "note": "The archive uses a social icon linking to twitter.com/JLPreptit. The profile name is Jeff L Preptit, Esq."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

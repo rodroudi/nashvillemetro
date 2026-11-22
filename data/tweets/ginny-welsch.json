@@ -1,0 +1,25 @@
+{
+ "pid": 220,
+ "slug": "ginny-welsch",
+ "name": "Ginny Welsch",
+ "handle": "GinnyWelsch",
+ "profileUrl": "https://x.com/GinnyWelsch",
+ "profileName": "no pass for fascism",
+ "protected": true,
+ "bio": "",
+ "handleSource": {
+  "title": "Ginny Welsch newsletter archive",
+  "url": "https://www.nashvillenewsletters.org/member/ginny-welsch",
+  "checked": "2026-11-22",
+  "note": "The archive and Ballotpedia (https://ballotpedia.org/Ginny_Welsch) link @GinnyWelsch. On this date the profile display name was \"no pass for fascism\" and posts were protected, so no post text was read."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": "2026-11-22T00:00:00Z",
+ "fetchStatus": "protected",
+ "fetchNote": "The account is protected. Posts were not read. Online engagement and decency are left out of the score rather than treated as zero.",
+ "truncated": false,
+ "posts": []
+}

@@ -1,0 +1,25 @@
+{
+ "pid": 283,
+ "slug": "rollin-horton",
+ "name": "Rollin Horton",
+ "handle": "HortonRollin",
+ "profileUrl": "https://x.com/HortonRollin",
+ "profileName": "Rollin Horton",
+ "protected": false,
+ "bio": "Nashville Metro Council Member District 20. The Nations, Charlotte Robertson, White Bridge, Hillwood.",
+ "handleSource": {
+  "title": "Public X profile",
+  "url": "https://x.com/HortonRollin",
+  "checked": "2026-11-22",
+  "note": "The profile name and bio identify him as the District 20 council member. His newsletter is the Westside Stories Substack."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

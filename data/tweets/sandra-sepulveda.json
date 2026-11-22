@@ -1,0 +1,26 @@
+{
+ "pid": 234,
+ "slug": "sandra-sepulveda",
+ "name": "Sandra Sepulveda",
+ "handle": "SandraForNash",
+ "profileUrl": "https://x.com/SandraForNash",
+ "profileName": "Sandra Sepulveda",
+ "protected": false,
+ "bio": "",
+ "handleSource": {
+  "title": "sandrafornashville.com contact page",
+  "url": "https://www.sandrafornashville.com/contact",
+  "checked": "2026-11-22",
+  "note": "The contact page links https://twitter.com/SandraForNash. The profile name is Sandra Sepulveda and the profile header reported 0 posts."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": "2026-11-22T00:00:00Z",
+ "fetchStatus": "ok",
+ "fetchNote": "The public profile header reported 0 posts on this date, so the lookback window contains no posts. Repost and like counts are not applicable.",
+ "truncated": false,
+ "posts": [],
+ "profilePostCount": 0
+}

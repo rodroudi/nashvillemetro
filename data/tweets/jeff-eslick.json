@@ -1,0 +1,25 @@
+{
+ "pid": 293,
+ "slug": "jeff-eslick",
+ "name": "Jeff Eslick",
+ "handle": "jeff_eslick",
+ "profileUrl": "https://x.com/jeff_eslick",
+ "profileName": "Jeff Eslick",
+ "protected": false,
+ "bio": "I am running because District 11 needs a neighbor. Metro Council doesn't need another political activist.",
+ "handleSource": {
+  "title": "Ballotpedia page for Jeff Eslick",
+  "url": "https://ballotpedia.org/Jeff_Eslick",
+  "checked": "2026-11-22",
+  "note": "Ballotpedia links https://x.com/jeff_eslick. The bio names District 11."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

@@ -1,0 +1,31 @@
+name: Recompute Dolly Servitude scores
+
+on:
+  schedule:
+    # Mondays at 12:00 UTC. Re-reads data files; does not fetch the web.
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Recompute scores from the data files
+        run: python3 scripts/compute_score.py
+      - name: Check the score
+        run: python3 scripts/test_score.py
+      - name: Publish scores when the result changed
+        run: |
+          git diff --quiet data/scores.json data/tweets/index.json && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/scores.json data/tweets/index.json
+          git commit -m "Recompute Dolly Servitude scores"
+          git push

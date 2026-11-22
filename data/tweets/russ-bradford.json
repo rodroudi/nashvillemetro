@@ -1,0 +1,25 @@
+{
+ "pid": 217,
+ "slug": "russ-bradford",
+ "name": "Russ Bradford",
+ "handle": "Bradford4D13",
+ "profileUrl": "https://x.com/Bradford4D13",
+ "profileName": "Councilman Russ Bradford",
+ "protected": false,
+ "bio": "Metro Council District 13.",
+ "handleSource": {
+  "title": "Russ Bradford newsletter archive",
+  "url": "https://www.nashvillenewsletters.org/member/russ-bradford",
+  "checked": "2026-11-22",
+  "note": "The archive repeats links to twitter.com/bradford4d13. The bio says Metro Council District 13."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

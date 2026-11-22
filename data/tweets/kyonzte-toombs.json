@@ -1,0 +1,25 @@
+{
+ "pid": 206,
+ "slug": "kyonzte-toombs",
+ "name": "Kyonzté Toombs",
+ "handle": "toombsfortwo",
+ "profileUrl": "https://x.com/toombsfortwo",
+ "profileName": "Kyonzte Toombs",
+ "protected": false,
+ "bio": "Councilwoman for District 2, Nashville Metro Council",
+ "handleSource": {
+  "title": "toombsfortwo.com",
+  "url": "https://toombsfortwo.com/",
+  "checked": "2026-11-22",
+  "note": "Her campaign site links https://x.com/toombsfortwo and the bio names the District 2 seat. Ballotpedia also lists @fly_attorney, which is a second account under her name and is not the one scored."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}

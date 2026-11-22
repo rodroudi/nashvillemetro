@@ -1,0 +1,25 @@
+{
+ "pid": 281,
+ "slug": "terry-vo",
+ "name": "Terry Vo",
+ "handle": "terryvofornash",
+ "profileUrl": "https://x.com/terryvofornash",
+ "profileName": "Terry Vo for Nashville",
+ "protected": false,
+ "bio": "Inclusion. Integrity. Kindness | District 17 Metropolitan Councilmember",
+ "handleSource": {
+  "title": "Terry Vo newsletter archive",
+  "url": "https://www.nashvillenewsletters.org/member/terry-vo",
+  "checked": "2026-11-22",
+  "note": "The archive uses a social icon linking to twitter.com/terryvofornash. The bio says District 17 Metropolitan Councilmember."
+ },
+ "handleCheck": {
+  "checked": "2026-11-22",
+  "result": "verified"
+ },
+ "fetchedAt": null,
+ "fetchStatus": "pending",
+ "fetchNote": "Handle verified. Recent posts have not been loaded into this file yet.",
+ "truncated": false,
+ "posts": []
+}
